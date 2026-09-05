@@ -1,0 +1,34 @@
+/* guardrails.css — грузится ПОСЛЕ skin.css. Гарантирует мобильную адаптацию и читаемость
+   НЕЗАВИСИМО от Codex-скина (скин сохраняет полную свободу на десктопе). Здесь только «пол»:
+   ничего не украшает, лишь не даёт скину сломать телефон/чтение. */
+
+/* ── reading integrity (везде): текст-ссылка никогда не садится на залитый фон ──
+   (частый баг: «растущее подчёркивание» через background-image без background-size:0 → блок за текстом) */
+.prose a, .story h3 a, .lead h2 a, .rail-item a, .related-item a, .archive-item a, .foot-nav a{
+  background-image:none !important;
+}
+
+/* ── мобильная адаптация (≤560px): пол, который скин не может пробить ── */
+@media (max-width:560px){
+  /* любую 2-колоночную раскладку кладём в столбик — никогда не зажимаем текст в узкую полосу */
+  .lead.has-cover, .feed-grid.has-rail, .foot-inner,
+  .story.with-thumb, .archive-item, .home-intro{
+    grid-template-columns:1fr !important;
+  }
+  .story.with-thumb .story-thumb{display:none !important}   /* мелкое превью в столбике только мешает */
+  .home-intro .tagline, .home-intro p, .lead h2, .lead .dek, .story h3, .story .dek{
+    grid-column:auto !important; max-width:100% !important;
+  }
+  .rail{padding-left:0 !important; border-left:0 !important}
+
+  /* усмиряем максимально раздутую дисплей-типографику на телефоне (диверсити живёт на десктопе) */
+  .home-intro .tagline, .lead h2{font-size:clamp(2rem, 8.5vw, 2.95rem) !important; line-height:1.06 !important}
+  .article-head h1{font-size:clamp(1.9rem, 8vw, 2.7rem) !important; line-height:1.08 !important}
+  .brand-name{font-size:clamp(1.5rem, 7.5vw, 2.15rem) !important}
+  .prose h2{font-size:clamp(1.5rem, 6.5vw, 2rem) !important}
+  .prose{font-size:1.02rem !important}
+  .head-inner{min-height:0 !important; padding-block:.9rem !important}
+
+  /* нижняя граница по горизонтали: декоративные offset-тени не создают прокрутку */
+  body{overflow-x:hidden}
+}

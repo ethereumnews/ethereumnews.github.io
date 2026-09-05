@@ -1,0 +1,108 @@
+/* base.css — neutral premium foundation shared by all presets. Character lives in layout.css + theme.css. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--font-body); font-size:1.02rem; line-height:var(--lh);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img{max-width:100%; height:auto; display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font-display); font-weight:600; line-height:1.14; letter-spacing:-0.01em; margin:0 0 .5em}
+p{margin:0 0 1.1em}
+.wrap{width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(1.1rem,4vw,2.4rem)}
+.skip{position:absolute; left:-9999px; top:0; background:var(--accent); color:var(--accent-ink); padding:.6rem 1rem; border-radius:0 0 var(--radius) 0; z-index:50}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+
+/* ── header ── (НЕ sticky: обычный поток, не прилипает при скролле) */
+.site-head{border-bottom:1px solid var(--border); background:var(--bg)}
+.head-inner{display:flex; align-items:center; justify-content:center; gap:1.5rem; padding-block:1.1rem}
+.brand{display:inline-flex; align-items:center; gap:.6rem; text-decoration:none; color:var(--text)}
+.brand-name{font-family:var(--font-display); font-weight:600; font-size:1.28rem; letter-spacing:-0.015em}
+.brand-mark{display:grid; place-items:center; width:2rem; height:2rem; border-radius:calc(var(--radius) * .5); background:var(--accent); color:var(--accent-ink); font-family:var(--font-display); font-weight:700; font-size:1rem; letter-spacing:-0.02em}
+.brand-mark.small{width:1.5rem; height:1.5rem; font-size:.8rem}
+.site-nav{display:flex; gap:1.4rem; align-items:center}
+.site-nav a{text-decoration:none; color:var(--muted); font-size:.82rem; font-weight:600; text-transform:uppercase; letter-spacing:.06em; padding-bottom:2px; border-bottom:2px solid transparent; transition:color .15s}
+.site-nav a:hover{color:var(--text)}
+.site-nav a[aria-current="page"]{color:var(--text); border-color:var(--accent)}
+
+/* ── footer ── */
+.site-foot{border-top:1px solid var(--border); margin-top:var(--pad-section); background:var(--surface)}
+.foot-inner{padding-block:2.4rem; display:grid; gap:.5rem}
+.foot-brand{display:inline-flex; align-items:center; gap:.5rem; font-family:var(--font-display); font-weight:600}
+.foot-nav{display:flex; flex-wrap:wrap; gap:1.2rem; margin:.5rem 0 .2rem}
+.foot-nav a{color:var(--muted); font-size:.8rem; font-weight:600; text-decoration:none; text-transform:uppercase; letter-spacing:.05em}
+.foot-nav a:hover{color:var(--accent)}
+.foot-note{color:var(--muted); font-size:.82rem; max-width:60ch; margin:.2rem 0 0}
+.foot-meta{color:var(--muted); font-size:.82rem; margin:.3rem 0 0}
+.foot-meta a{color:var(--muted); text-decoration:underline; text-underline-offset:2px}
+.foot-meta a:hover{color:var(--text)}
+
+/* ── buttons ── */
+.btn{display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:.92rem; text-decoration:none; padding:.7rem 1.15rem; border-radius:var(--radius); border:1px solid transparent; transition:transform .12s, box-shadow .12s}
+.btn-primary{background:var(--accent); color:var(--accent-ink); box-shadow:0 1px 0 rgba(255,255,255,.15) inset, 0 8px 20px -10px var(--accent)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{border-color:var(--border); color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent); color:var(--accent)}
+
+/* ── article body typography (shared, editorial) ── */
+.prose{font-size:1.11rem; line-height:1.75; color:var(--text)}
+.prose > *{max-width:68ch}
+.prose h2{font-size:1.55rem; margin-top:1.9em}
+.prose h3{font-size:1.22rem; margin-top:1.5em}
+.prose a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.prose a:hover{text-decoration-thickness:2px}
+.prose ul,.prose ol{padding-left:1.3em; margin:0 0 1.2em}
+.prose li{margin:.35em 0}
+.prose blockquote{margin:1.6em 0; padding:.2em 0 .2em 1.2em; border-left:3px solid var(--accent); font-family:var(--font-display); font-size:1.25rem; line-height:1.4; color:var(--text)}
+.prose img{border-radius:var(--radius); margin:1.6em 0}
+.prose code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:.9em; background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:.1em .4em}
+.prose hr{border:0; border-top:1px solid var(--border); margin:2.2em 0}
+
+/* ── utilities ── */
+.kicker{font-size:.74rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--accent)}
+.section-label{font-family:var(--font-display); font-size:.85rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); padding-bottom:.6rem; border-bottom:2px solid var(--text); margin:1.6rem 0 .4rem}
+.meta{font-size:.82rem; color:var(--muted); display:flex; gap:.6rem; align-items:center; flex-wrap:wrap}
+.meta .dot{width:3px; height:3px; border-radius:50%; background:var(--muted); opacity:.6}
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+@media (max-width:640px){
+  .site-nav{gap:1rem}
+  .site-nav a{font-size:.74rem}
+  .prose{font-size:1.05rem}
+}
+
+/* ── article / reading layout (shared; presets restyle the FEED, not this) ── */
+.article{padding-block:var(--pad-section) 0}
+.article-head{max-width:42rem; margin-inline:auto}
+.article-head .kicker{display:block; margin-bottom:.9rem}
+.article-head h1{font-size:clamp(2rem,4.6vw,3.1rem); letter-spacing:-0.022em; margin:0 0 .6rem}
+.article-head .dek{font-size:1.22rem; color:var(--muted); line-height:1.42; margin:0 0 1.2rem}
+.article-head .meta{padding-block:1.05rem; border-top:1px solid var(--border); border-bottom:1px solid var(--border)}
+.article-cover{max-width:60rem; margin:2rem auto; border-radius:var(--radius); width:100%; aspect-ratio:16/9; object-fit:cover; border:1px solid var(--border)}
+.article-body{max-width:42rem; margin-inline:auto}
+.article-body.prose > *{max-width:none; margin-left:0; margin-right:0}
+.article .prose{padding-top:.5rem}
+.related{max-width:42rem; margin:var(--pad-section) auto 0; padding-top:2rem; border-top:2px solid var(--text)}
+.related h2{font-size:1rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-bottom:.5rem}
+.related-list{display:grid; gap:0}
+.related-item{padding-block:1rem; border-bottom:1px solid var(--border)}
+.related-item a{font-family:var(--font-display); font-weight:600; font-size:1.18rem; text-decoration:none; color:var(--text)}
+.related-item a:hover{color:var(--accent)}
+.page-simple{max-width:44rem; margin-inline:auto; padding-block:var(--pad-section)}
+.page-simple h1{font-size:clamp(2rem,4vw,2.7rem); margin-bottom:1rem}
+
+/* ── structural variants (per-site, safe — anti-footprint) ── */
+[data-header="stacked"] .head-inner{flex-direction:column; align-items:flex-start; gap:.55rem}
+[data-header="stacked"] .site-nav{gap:1.3rem}
+[data-divider="double"] .section-label{border-bottom-style:double; border-bottom-width:4px}
+[data-divider="thick"] .section-label{border-bottom-width:3px}
+
+/* ── archive listing ── */
+.archive-sub{color:var(--muted); font-size:1.02rem; margin:0}
+.archive-list{display:grid; margin-top:1.6rem}
+.archive-item{display:grid; grid-template-columns:8.5rem 1fr; gap:1rem; align-items:baseline; padding-block:.85rem; border-bottom:1px solid var(--border)}
+.archive-item time{color:var(--muted); font-size:.85rem; font-variant-numeric:tabular-nums}
+.archive-item a{font-family:var(--font-display); font-weight:600; font-size:1.12rem; text-decoration:none; color:var(--text)}
+.archive-item a:hover{color:var(--accent)}
+@media (max-width:560px){ .archive-item{grid-template-columns:1fr; gap:.1rem} }

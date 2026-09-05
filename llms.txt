@@ -1,0 +1,7 @@
+# Digest
+
+crypto news and analysis.
+
+## Key pages
+- https://ethereumnews.github.io/
+- https://ethereumnews.github.io/about/

@@ -1,0 +1,14 @@
+/* theme.css — per-site design tokens (generated from design.json). Swapping design = swapping THIS file. */
+:root{
+  --bg:#fbfbf9; --surface:#f3f2ec; --elevated:#ffffff;
+  --text:#1c1c1a; --muted:#6f6d66; --border:#e6e4da;
+  --accent:#2f5d50; --accent-ink:#ffffff;
+  --font-display:"Newsreader", Georgia, serif;
+  --font-body:"Inter", system-ui, sans-serif;
+  --radius:6px;
+  --maxw:1080px;
+  --gap:1.5rem;
+  --pad-section:4.5rem;
+  --lh:1.7;
+  color-scheme:light;
+}

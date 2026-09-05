@@ -1,0 +1,20 @@
+/* digest/layout.css — minimal magazine. Big serif, numbered single-column list, thumbnails, lots of air. */
+
+.d-intro{padding-block:calc(var(--pad-section) * 1.2) 1.8rem; max-width:40rem}
+.d-tagline{font-size:clamp(2.2rem,5.5vw,3.6rem); line-height:1.04; letter-spacing:-0.02em; margin:0 0 .7rem}
+.d-intro p{color:var(--muted); font-size:1.12rem; margin:0}
+
+.d-list{display:grid; gap:0}
+.d-item{display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:start; padding-block:2.2rem; border-top:1px solid var(--border)}
+.d-item:first-child{border-top:2px solid var(--text)}
+@media (max-width:620px){ .d-item{grid-template-columns:1fr} .d-thumb-link{display:none} }
+.d-item-main{display:grid; grid-template-columns:auto 1fr; gap:1.5rem; align-items:start}
+@media (max-width:520px){ .d-item-main{grid-template-columns:1fr; gap:.4rem} }
+.d-num{font-family:var(--font-display); font-size:2.2rem; font-weight:400; line-height:1; color:var(--border); font-variant-numeric:tabular-nums; padding-top:.15rem}
+.d-item-text .kicker{display:block; margin-bottom:.5rem}
+.d-item-text h2{font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.12; margin:0 0 .5rem}
+.d-item-text h2 a{text-decoration:none; color:var(--text)}
+.d-item-text h2 a:hover{color:var(--accent)}
+.d-item-text .dek{color:var(--muted); font-size:1.02rem; max-width:56ch; margin:0 0 .7rem}
+.d-thumb{border-radius:var(--radius); width:200px; aspect-ratio:3/2; object-fit:cover; border:1px solid var(--border)}
+@media (max-width:900px){ .d-thumb{width:150px} }
