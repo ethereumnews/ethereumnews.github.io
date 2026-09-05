@@ -1,7 +1,9 @@
-# Digest
-
-crypto news and analysis.
-
+# Forkline
+Forkline is an independent crypto news publication focused on Ethereum and crypto infrastructure.
+It explains protocol changes, scaling networks, market structure, governance, and on-chain finance.
+Coverage is concise, source-led, and written for investors, developers, and curious users.
+Forkline is not affiliated with or endorsed by the projects it covers.
 ## Key pages
-- https://ethereumnews.github.io/
-- https://ethereumnews.github.io/about/
+- [Home](https://ethereumnews.github.io/)
+- [About](https://ethereumnews.github.io/about/)
+- Editorial focus: Ethereum and the settlement layer

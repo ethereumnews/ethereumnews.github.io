@@ -1,20 +1,48 @@
-/* digest/layout.css — minimal magazine. Big serif, numbered single-column list, thumbnails, lots of air. */
+/* ledger/layout.css — editorial broadsheet. Hairline-separated stories, a lead, a right rail. No cards. */
 
-.d-intro{padding-block:calc(var(--pad-section) * 1.2) 1.8rem; max-width:40rem}
-.d-tagline{font-size:clamp(2.2rem,5.5vw,3.6rem); line-height:1.04; letter-spacing:-0.02em; margin:0 0 .7rem}
-.d-intro p{color:var(--muted); font-size:1.12rem; margin:0}
+/* ── home: masthead intro ── */
+.home-intro{padding-block:var(--pad-section) 1.6rem}
+.home-intro .tagline{font-family:var(--font-display); font-size:clamp(1.9rem,4.5vw,3rem); line-height:1.05; letter-spacing:-0.02em; margin:0 0 .5rem; max-width:20ch}
+.home-intro p{color:var(--muted); font-size:1.08rem; max-width:60ch; margin:0}
+.home-intro .rule{height:2px; background:var(--text); margin-top:1.6rem; opacity:.9}
 
-.d-list{display:grid; gap:0}
-.d-item{display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:start; padding-block:2.2rem; border-top:1px solid var(--border)}
-.d-item:first-child{border-top:2px solid var(--text)}
-@media (max-width:620px){ .d-item{grid-template-columns:1fr} .d-thumb-link{display:none} }
-.d-item-main{display:grid; grid-template-columns:auto 1fr; gap:1.5rem; align-items:start}
-@media (max-width:520px){ .d-item-main{grid-template-columns:1fr; gap:.4rem} }
-.d-num{font-family:var(--font-display); font-size:2.2rem; font-weight:400; line-height:1; color:var(--border); font-variant-numeric:tabular-nums; padding-top:.15rem}
-.d-item-text .kicker{display:block; margin-bottom:.5rem}
-.d-item-text h2{font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.12; margin:0 0 .5rem}
-.d-item-text h2 a{text-decoration:none; color:var(--text)}
-.d-item-text h2 a:hover{color:var(--accent)}
-.d-item-text .dek{color:var(--muted); font-size:1.02rem; max-width:56ch; margin:0 0 .7rem}
-.d-thumb{border-radius:var(--radius); width:200px; aspect-ratio:3/2; object-fit:cover; border:1px solid var(--border)}
-@media (max-width:900px){ .d-thumb{width:150px} }
+/* ── lead story ── */
+.lead{display:grid; gap:1.6rem; padding-block:2rem; border-bottom:1px solid var(--border)}
+.lead.has-cover{grid-template-columns:1.05fr .95fr; align-items:center}
+@media (max-width:820px){ .lead.has-cover{grid-template-columns:1fr} }
+.lead .lead-cover{border-radius:var(--radius); aspect-ratio:16/10; object-fit:cover; width:100%; border:1px solid var(--border)}
+.lead h2{font-size:clamp(1.9rem,4vw,2.9rem); margin:.4rem 0 .5rem}
+.lead h2 a{text-decoration:none; color:var(--text)}
+.lead h2 a:hover{color:var(--accent)}
+.lead .dek{font-size:1.15rem; color:var(--muted); max-width:52ch; margin:0 0 1rem}
+
+/* ── main + rail grid ── */
+.feed-grid{display:grid; gap:clamp(2rem,5vw,4rem); padding-block:2.2rem; grid-template-columns:1fr}
+.feed-grid.has-rail{grid-template-columns:minmax(0,1fr) 300px}
+@media (max-width:900px){ .feed-grid.has-rail{grid-template-columns:1fr} }
+
+.section-label{font-family:var(--font-display); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); padding-bottom:.7rem; border-bottom:2px solid var(--text); margin-bottom:.4rem}
+
+/* river of stories — separated by hairlines, not boxed */
+.river{display:grid}
+.story{display:grid; grid-template-columns:1fr; gap:.3rem; padding-block:1.5rem; border-bottom:1px solid var(--border)}
+.story.with-thumb{grid-template-columns:1fr 150px; gap:1.4rem; align-items:start}
+@media (max-width:520px){ .story.with-thumb{grid-template-columns:1fr} .story.with-thumb .story-thumb{display:none} }
+.story-thumb{border-radius:calc(var(--radius) * .7); aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid var(--border); order:2}
+.story h3{font-size:1.4rem; margin:.15rem 0 .3rem}
+.story h3 a{text-decoration:none; color:var(--text)}
+.story h3 a:hover{color:var(--accent)}
+.story .dek{color:var(--muted); font-size:.98rem; margin:0 0 .5rem; max-width:60ch}
+
+/* right rail */
+.rail{display:grid; gap:2rem; align-content:start}
+.rail-latest{display:grid}
+.rail-item{padding-block:.85rem; border-bottom:1px solid var(--border); display:grid; gap:.2rem}
+.rail-item a{text-decoration:none; font-family:var(--font-display); font-weight:600; font-size:1rem; color:var(--text); line-height:1.25}
+.rail-item a:hover{color:var(--accent)}
+.rail-item .meta{font-size:.74rem}
+.topics{display:flex; flex-wrap:wrap; gap:.5rem}
+.topic{font-size:.78rem; color:var(--muted); border:1px solid var(--border); border-radius:100px; padding:.28rem .7rem; text-decoration:none}
+.topic:hover{border-color:var(--accent); color:var(--accent)}
+
+/* article / related / simple pages → в _shared/base.css (общая читаемая колонка) */
