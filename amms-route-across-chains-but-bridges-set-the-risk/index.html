@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en-US" data-mode="dark">
+<html lang="en-US" data-mode="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How AMMs Support Cross-Chain Asset Routing | Forkline</title>
+<title>How AMMs Support Cross-Chain Asset Routing</title>
 <meta name="description" content="AMMs make cross-chain swaps possible by pricing local liquidity, but bridges and solvers still decide whether the asset arrives safely and who absorbs the risk.">
 <link rel="canonical" href="https://ethereumnews.github.io/amms-route-across-chains-but-bridges-set-the-risk/">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-<meta name="theme-color" content="#0a0f10">
-<meta name="author" content="Mara Ellison"><meta property="og:type" content="article">
-<meta property="og:site_name" content="Forkline">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="author" content="The Crypto Execution Weekly Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Execution Weekly">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="AMMs Route Across Chains, but Bridges Set the Risk">
 <meta property="og:description" content="AMMs make cross-chain swaps possible by pricing local liquidity, but bridges and solvers still decide whether the asset arrives safely and who absorbs the risk.">
@@ -21,13 +21,15 @@
 <meta name="twitter:title" content="AMMs Route Across Chains, but Bridges Set the Risk">
 <meta name="twitter:description" content="AMMs make cross-chain swaps possible by pricing local liquidity, but bridges and solvers still decide whether the asset arrives safely and who absorbs the risk.">
 <meta property="article:published_time" content="2026-09-08T07:31:50">
+<meta property="article:section" content="Liquidity pools and order routing"><meta property="article:tag" content="Liquidity pools and order routing">
+<meta property="article:tag" content="Exchange engines and trading APIs">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="/assets/sf198a56f81.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s03b7d32e7e.css">
 <link rel="icon" href="/assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="alternate" type="application/rss+xml" title="Forkline" href="/feed.xml"><script type="application/ld+json">
+<link rel="alternate" type="application/rss+xml" title="Crypto Execution Weekly" href="/feed.xml"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -47,11 +49,13 @@
       "author": {
         "@type": "Organization",
         "@id": "https://ethereumnews.github.io/#org",
-        "name": "Mara Ellison"
+        "name": "The Crypto Execution Weekly Editors"
       },
       "publisher": {
         "@id": "https://ethereumnews.github.io/#org"
       },
+      "keywords": "Liquidity pools and order routing, Exchange engines and trading APIs",
+      "articleSection": "Liquidity pools and order routing",
       "wordCount": 644,
       "image": {
         "@type": "ImageObject",
@@ -80,7 +84,7 @@
     {
       "@type": "Organization",
       "@id": "https://ethereumnews.github.io/#org",
-      "name": "Forkline",
+      "name": "Crypto Execution Weekly",
       "url": "https://ethereumnews.github.io/",
       "logo": {
         "@type": "ImageObject",
@@ -90,19 +94,19 @@
     {
       "@type": "WebSite",
       "@id": "https://ethereumnews.github.io/#website",
-      "name": "Forkline",
+      "name": "Crypto Execution Weekly",
       "url": "https://ethereumnews.github.io/",
       "publisher": {
         "@id": "https://ethereumnews.github.io/#org"
       },
       "inLanguage": "en-US",
-      "description": "Forkline covers Ethereum and crypto news with clear reporting on protocol upgrades, markets, networks, and the people building on-chain finance."
+      "description": "Independent crypto news for active traders, tracing exchange builds, liquidity routes and protocol upgrades through their effects on fills, fees and flow."
     },
     {
       "@type": "WebPage",
       "@id": "https://ethereumnews.github.io/amms-route-across-chains-but-bridges-set-the-risk/#webpage",
       "url": "https://ethereumnews.github.io/amms-route-across-chains-but-bridges-set-the-risk/",
-      "name": "How AMMs Support Cross-Chain Asset Routing | Forkline",
+      "name": "How AMMs Support Cross-Chain Asset Routing",
       "isPartOf": {
         "@id": "https://ethereumnews.github.io/#website"
       },
@@ -116,31 +120,35 @@
 <a class="skip" href="#main">Skip to the article</a>
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="/" aria-label="Forkline — home">
-      <span class="brand-mark" aria-hidden="true">F</span>
-      <span class="brand-name">Forkline</span>
+    <a class="brand" href="/" aria-label="Crypto Execution Weekly — home">
+      <span class="brand-mark" aria-hidden="true">CE</span>
+      <span class="brand-name">Crypto Execution Weekly</span>
     </a>
   </div>
 </header>
 
 <main id="main">
-<article class="article">
+<article class="wrap article-page" aria-labelledby="article-title">
   <header class="article-header">
-    <div class="wrap article-header-inner">
-      <p class="article-kicker">F crypto</p>
-      <h1>AMMs Route Across Chains, but Bridges Set the Risk</h1>
-      <p class="article-dek">AMMs make cross-chain swaps possible by pricing local liquidity, but bridges and solvers still decide whether the asset arrives safely and who absorbs the risk.</p>
-      <p class="article-meta">By Mara Ellison <span>·</span> <time datetime="2026-09-08T07:31:50">Sep 8, 2026</time> <span>·</span> 3 min read</p>
+    <div class="article-kicker-row">
+      <p class="kicker">crypto</p>
+      <a class="publication-link" href="/">Crypto Execution Weekly</a>
+    </div>
+    <h1 id="article-title">AMMs Route Across Chains, but Bridges Set the Risk</h1>
+    <p class="article-dek">AMMs make cross-chain swaps possible by pricing local liquidity, but bridges and solvers still decide whether the asset arrives safely and who absorbs the risk.</p>
+    <div class="article-meta">
+      <span class="article-author">By The Crypto Execution Weekly Editors</span>
+      <time datetime="2026-09-08T07:31:50">Sep 8, 2026</time>
+      <span>3 min read</span>
     </div>
   </header>
 
-  <figure class="article-cover wrap">
-    <img src="/assets/covers/amms-route-across-chains-but-bridges-set-the-risk.jpg" alt="AMMs Route Across Chains, but Bridges Set the Risk">
+  <figure class="article-cover">
+    <img src="/assets/covers/amms-route-across-chains-but-bridges-set-the-risk.jpg" alt="AMMs Route Across Chains, but Bridges Set the Risk" width="1200" height="630" fetchpriority="high" decoding="async">
   </figure>
 
-  <div class="wrap article-layout">
-    <div class="article-main">
-      <div class="prose"><p>AMMs support cross-chain asset routing by supplying local liquidity on each network while a bridge, messaging layer, or solver coordinates the handoff between them. That makes the route executable, not trustless: the user can swap on one chain and receive a usable representation on another, but the bridge or solver remains the party that determines whether value survives the crossing. The attractive interface hides a stack of separate prices, fees, and failure points.</p>
+  <div class="article-reading">
+    <div class="prose"><p>AMMs support cross-chain asset routing by supplying local liquidity on each network while a bridge, messaging layer, or solver coordinates the handoff between them. That makes the route executable, not trustless: the user can swap on one chain and receive a usable representation on another, but the bridge or solver remains the party that determines whether value survives the crossing. The attractive interface hides a stack of separate prices, fees, and failure points.</p>
 <h2>How does an AMM route an asset across chains?</h2>
 <p>An AMM routes a cross-chain trade by pricing the source and destination swaps independently, then connecting them with a settlement mechanism. A router might exchange USDC for an intermediary token on Ethereum, send that token or a message through a bridge, and sell it into the desired asset on Arbitrum. Each pool uses its reserves to quote the trade; in a constant-product pool, the familiar x*y=k relationship means the quote worsens as the order consumes a larger share of liquidity.</p>
 <p>The route therefore depends on more than the best-looking headline price. A useful router compares pool depth, price impact, gas, bridge charges, destination liquidity, and the time required for finality. It may split a trade across pools or use a solver that fronts the destination asset and later claims reimbursement. The visible swap is one transaction to the user; underneath, it is a sequence whose weakest link sets the outcome.</p>
@@ -157,20 +165,27 @@
 <p>The user carries execution risk first, while liquidity providers and bridge operators divide the economic risk behind the interface. A 0.3% fee on two AMM legs is already 0.6% before price impact, gas, and any bridge or solver charge. If the source transaction succeeds but the destination message stalls, the user may wait, pay for recovery, or receive a fallback asset. If the representation loses its backing, the destination pool can reprice it faster than an interface can warn anyone.</p>
 <p>Liquidity providers receive trading fees and, in some designs, routing incentives; they also warehouse impermanent loss and toxic flow. Bridges and solvers capture fees for capital, verification, and speed. The user is sold “one swap,” but is actually underwriting the assumptions of each pool and the authority that confirms the cross-chain state.</p>
 <p>The clear verdict is that AMMs are the liquidity engine of cross-chain routing, not its security layer. The model is defensible when bridge collateral, message verification, fallback behavior, and destination liquidity are transparent enough to audit. It fails the marketing story when a router advertises seamless movement while hiding who can mint the wrapped asset, pause redemption, or finalize a disputed message. Prove those controls and the route earns trust; conceal them, and the convenience belongs to the intermediary while the tail risk belongs to the trader.</p></div>
-    </div>
 
-    <aside class="article-aside">
-      <p class="aside-label">Filed under</p>
-      <p class="aside-niche">crypto</p>
-    </aside>
+    <section class="article-tags" aria-labelledby="article-tags-title">
+      <h2 id="article-tags-title">Filed under</h2>
+      <ul>
+        <li>Liquidity pools and order routing</li>
+        <li>Exchange engines and trading APIs</li>
+      </ul>
+    </section>
   </div>
 
-  <section class="related">
-    <div class="wrap related-inner">
-      <p class="related-label">Continue reading</p>
-      <div class="related-list">
-        <a href="/congestion-turns-crypto-transfers-into-a-routing-market/">Congestion Turns Crypto Transfers Into a Routing Market</a>
-      </div>
+  <section class="related-section" aria-labelledby="related-title">
+    <header class="section-heading">
+      <h2 id="related-title">Further reading</h2>
+    </header>
+    <div class="related-grid">
+      <article class="related-story">
+        <h3><a href="/congestion-turns-crypto-transfers-into-a-routing-market/">Congestion Turns Crypto Transfers Into a Routing Market</a></h3>
+      </article>
+      <article class="related-story">
+        <h3><a href="/eurc-joins-cctp-but-the-route-starts-with-two-chains/">EURC Joins CCTP, but the Route Starts With Two Chains</a></h3>
+      </article>
     </div>
   </section>
 </article>
@@ -178,15 +193,19 @@
 
 <footer class="site-foot">
   <div class="wrap foot-inner">
-    <div class="foot-brand"><span class="brand-mark small" aria-hidden="true">F</span> Forkline</div>
+    <div class="foot-brand"><span class="brand-mark small" aria-hidden="true">CE</span> Crypto Execution Weekly</div>
     <nav class="foot-nav" aria-label="Sections">
 <a href="/">Start</a>
 <a href="/privacy/">Privacy &amp; terms</a>
 <a href="/archive/">All articles</a>
 <a href="/about/">Masthead</a>
+<a href="/topics/liquidity-pools-and-order-routing/">Liquidity pools and order routing</a>
+<a href="/topics/stablecoin-settlement-and-bridge-flows/">Stablecoin settlement and bridge flows</a>
+<a href="/topics/exchange-engines-and-trading-apis/">Exchange engines and trading APIs</a>
+<a href="/topics/protocol-upgrades-and-trading-integrations/">Protocol upgrades and trading integrations</a>
     </nav>
-    <p class="foot-note">Forkline is an independent publication and is not affiliated with or endorsed by any protocol, exchange, or project it covers; nothing here is financial advice.</p>
-    <p class="foot-meta">© 2026 Forkline</p>
+    <p class="foot-note">Crypto Execution Weekly is an independent publication, not affiliated with or endorsed by any protocol, exchange or project it covers; nothing here is financial advice.</p>
+    <p class="foot-meta">© 2026 Crypto Execution Weekly</p>
   </div>
 </footer>
 </body>
