@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RPC Providers Carry Wallet Reads and Broadcasts</title>
+<meta name="description" content="A stale RPC read can poison a wallet nonce or quote; head-aware fallbacks and duplicate raw broadcasts improve execution without changing the order.">
+<link rel="canonical" href="https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="The Crypto Execution Weekly Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Execution Weekly">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The RPC Endpoint Is Part of Every Wallet Fill">
+<meta property="og:description" content="A stale RPC read can poison a wallet nonce or quote; head-aware fallbacks and duplicate raw broadcasts improve execution without changing the order.">
+<meta property="og:url" content="https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/the-rpc-endpoint-is-part-of-every-wallet-fill-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The RPC Endpoint Is Part of Every Wallet Fill"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The RPC Endpoint Is Part of Every Wallet Fill">
+<meta name="twitter:description" content="A stale RPC read can poison a wallet nonce or quote; head-aware fallbacks and duplicate raw broadcasts improve execution without changing the order.">
+<meta property="article:published_time" content="2026-09-09T14:59:19+00:00">
+<meta property="article:section" content="Transaction ordering and execution costs"><meta property="article:tag" content="Transaction ordering and execution costs">
+<meta property="article:tag" content="Liquidity pools and order routing">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s03b7d32e7e.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Execution Weekly" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/#article",
+      "headline": "The RPC Endpoint Is Part of Every Wallet Fill",
+      "isAccessibleForFree": true,
+      "description": "A stale RPC read can poison a wallet nonce or quote; head-aware fallbacks and duplicate raw broadcasts improve execution without changing the order.",
+      "datePublished": "2026-09-09T14:59:19+00:00",
+      "dateModified": "2026-09-09T14:59:19+00:00",
+      "url": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://ethereumnews.github.io/#org",
+        "name": "The Crypto Execution Weekly Editors"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "keywords": "Transaction ordering and execution costs, Liquidity pools and order routing",
+      "articleSection": "Transaction ordering and execution costs",
+      "wordCount": 561,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/the-rpc-endpoint-is-part-of-every-wallet-fill.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The RPC Endpoint Is Part of Every Wallet Fill",
+          "item": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Crypto Execution Weekly",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Crypto Execution Weekly",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Independent crypto news for active traders, tracing exchange builds, liquidity routes and protocol upgrades through their effects on fills, fees and flow."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/#webpage",
+      "url": "https://ethereumnews.github.io/the-rpc-endpoint-is-part-of-every-wallet-fill/",
+      "name": "RPC Providers Carry Wallet Reads and Broadcasts",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5783c80" href="#main">Skip to the article</a>
+<header class="s98a308a"><a href="/"><strong>Crypto Execution Weekly</strong></a> <span>Crypto news on trading systems, liquidity and execution</span></header>
+
+<main id="main">
+<article class="s98a308a sc01c704" aria-labelledby="article-title">
+  <header class="se91b25a">
+    <div class="s5d2b493">
+      <p class="s8010ae3">Transaction ordering and execution costs</p>
+      <a class="s9dfcf65" href="/">Crypto Execution Weekly</a>
+    </div>
+    <h1 id="article-title">The RPC Endpoint Is Part of Every Wallet Fill</h1>
+    <p class="s820e09d">A stale RPC read can poison a wallet nonce or quote; head-aware fallbacks and duplicate raw broadcasts improve execution without changing the order.</p>
+    <div class="sa130c3e">
+      <span class="sbb302fb">By The Crypto Execution Weekly Editors</span>
+      <time datetime="2026-09-09T14:59:19+00:00">Sep 9, 2026</time>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <figure class="s72d20a1">
+    <img src="/assets/covers/the-rpc-endpoint-is-part-of-every-wallet-fill.jpg" alt="The RPC Endpoint Is Part of Every Wallet Fill" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="s7e15655">
+    <div class="saf45eaf"><p>RPC providers carry the reads and broadcasts behind a wallet swap, so a stale pending nonce or dropped submission can stop an otherwise valid order before the liquidity pool sees it. The visible failure may be “nonce too low,” an expired quote or a transaction that remains absent from explorers. The responsible component is often neither wallet signing nor the exchange contract. It is the node endpoint supplying state and relaying the signed bytes.</p>
+
+<p>Consider one token swap. The interface first reads balances and allowance, simulates the router call, estimates gas and requests the account nonce. The wallet signs locally; the provider does not receive the private key. It receives the resulting raw transaction and returns a hash after <strong>eth_sendRawTransaction</strong>. That acknowledgment proves the endpoint accepted the request, not that peers received it or a block included it.</p>
+
+<h2>How does an RPC provider carry a wallet order?</h2>
+
+<p>The provider supplies every state-dependent input surrounding the signature, then introduces the signed transaction to its node’s peer network. A typical order crosses these RPC methods:</p>
+
+<ul>
+<li><strong>eth_call</strong> simulates the router against a specified block state.</li>
+<li><strong>eth_getTransactionCount</strong> obtains the account nonce, preferably with the pending tag.</li>
+<li><strong>eth_estimateGas</strong> tests an execution path without adding it to a block.</li>
+<li><strong>eth_sendRawTransaction</strong> submits the signed payload; receipt polling later tests inclusion.</li>
+</ul>
+
+<p>The chain identifier and router address must also match the quote. A venue-specific instruction such as <a href="https://assorted-frown-13b.notion.site/Frax-Swap-Choose-Proof-of-Stake-or-Proof-of-Work-3d6981e2762380cc8c88ff4646dff04c" rel="noopener">Frax Swap’s network-selection note</a> is therefore execution context, not interface decoration. A correct signature for the wrong network cannot rescue the intended trade.</p>
+
+<h2>Why can a healthy chain still produce a failed swap?</h2>
+
+<p>A healthy chain can look broken when one provider trails the head, lacks another node’s pending transactions or accepts a broadcast without propagating it promptly. Suppose the wallet already has nonce 18 pending. An endpoint that reports only confirmed state may return 18 again; the replacement can be rejected, underpriced or compete with the original transaction. A stale simulation can likewise approve a route whose reserves move before inclusion, causing the router’s minimum-output check to revert.</p>
+
+<p>The trader bears that trade-off. Reads are free, but a reverted included transaction still consumes gas, and a delayed broadcast increases exposure to price movement and quote expiry. The pool never promised the displayed output independently of the block state used for the call.</p>
+
+<h2>Does dual-provider routing improve wallet execution?</h2>
+
+<p>Dual-provider routing improves execution when it checks read freshness and sends identical signed bytes through independent endpoints. The mechanism is testable: place a proxy before provider A, make its block-number response lag by two blocks, then drop its broadcast. With one endpoint, the test produces zero accepted submissions. With provider B as a head-aware fallback, it produces one transaction candidate.</p>
+
+<p>Broadcasting the same raw transaction twice does not create two fills: the signature, sender and nonce are identical, so both providers derive the same transaction hash and the chain can execute that nonce once. This is better than rebuilding and re-signing through the fallback, which risks different fee fields or accidental replacement behavior.</p>
+
+<p>The cost is another infrastructure dependency, extra request volume and wider disclosure of the wallet’s IP-address-to-account relationship. Builders should expose the active chain, latest block seen, selected nonce, transaction hash and receipt status. Traders can inspect those values live, switch endpoints, submit the same signed payload to a second provider and verify that both routes converge on one receipt.</p></div>
+
+    <section class="s165fde7" aria-labelledby="article-tags-title">
+      <h2 id="article-tags-title">Filed under</h2>
+      <ul>
+        <li>Transaction ordering and execution costs</li>
+        <li>Liquidity pools and order routing</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="s2d4dbee" aria-labelledby="related-title">
+    <header class="scdb3d44">
+      <h2 id="related-title">Further reading</h2>
+    </header>
+    <div class="sc1387fa">
+      <article class="sb82807c">
+        <h3><a href="/seven-mempool-fields-that-decide-a-swaps-fate/">Seven Mempool Fields That Decide a Swap’s Fate</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/congestion-turns-crypto-transfers-into-a-routing-market/">Congestion Turns Crypto Transfers Into a Routing Market</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/amms-route-across-chains-but-bridges-set-the-risk/">AMMs Route Across Chains, but Bridges Set the Risk</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/binance-retires-tacusdt-price-shield-restores-2-funding-cap/">Binance Retires TACUSDT Price Shield, Restores 2% Funding Cap</a></h3>
+      </article>
+    </div>
+  </section>
+</article>
+</main>
+
+<footer class="s98a308a"><nav><a href="/">Start</a> <a href="/privacy/">Privacy &amp; terms</a> <a href="/archive/">All articles</a> <a href="/about/">Masthead</a> </nav><nav><a href="/topics/liquidity-pools-and-order-routing/">Liquidity pools and order routing</a> <a href="/topics/stablecoin-settlement-and-bridge-flows/">Stablecoin settlement and bridge flows</a> <a href="/topics/protocol-upgrades-and-trading-integrations/">Protocol upgrades and trading integrations</a> <a href="/topics/transaction-ordering-and-execution-costs/">Transaction ordering and execution costs</a> <a href="/topics/exchange-engines-and-trading-apis/">Exchange engines and trading APIs</a> <a href="/topics/perpetuals-funding-and-liquidation-systems/">Perpetuals funding and liquidation systems</a> </nav><p>Crypto Execution Weekly is an independent publication, not affiliated with or endorsed by any protocol, exchange or project it covers; nothing here is financial advice.</p><p>© 2026 Crypto Execution Weekly</p></footer>
+</body>
+</html>
