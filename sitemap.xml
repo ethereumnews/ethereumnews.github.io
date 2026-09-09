@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-09-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/recurring-escrow-works-only-when-the-money-arrives-first/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/what-ethereum-validators-actually-do-to-produce-a-block/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/unique-addresses-beat-memos-when-deposits-go-wrong/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/a-universal-bridge-uasset-is-a-custodial-claim-not-a-coin/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
