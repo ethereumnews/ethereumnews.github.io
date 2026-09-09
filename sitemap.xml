@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-09-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/liquidity-pool-fees-pay-for-inventory-not-passive-capital/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/fee-markets-do-not-simply-put-the-highest-bid-first/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/how-blockchains-synchronize-without-a-central-server/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -13,8 +14,8 @@
 <url><loc>https://ethereumnews.github.io/amms-route-across-chains-but-bridges-set-the-risk/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/topics/liquidity-pools-and-order-routing/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://ethereumnews.github.io/topics/transaction-ordering-and-execution-costs/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-<url><loc>https://ethereumnews.github.io/topics/protocol-upgrades-and-trading-integrations/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://ethereumnews.github.io/topics/stablecoin-settlement-and-bridge-flows/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+<url><loc>https://ethereumnews.github.io/topics/protocol-upgrades-and-trading-integrations/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://ethereumnews.github.io/topics/exchange-engines-and-trading-apis/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://ethereumnews.github.io/topics/perpetuals-funding-and-liquidation-systems/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://ethereumnews.github.io/archive/</loc><priority>0.3</priority></url>

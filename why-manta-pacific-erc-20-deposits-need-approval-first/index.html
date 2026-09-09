@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Approve ERC-20s Before Depositing to Manta Pacific</title>
+<meta name="description" content="Manta Pacific ERC-20 deposits require a separate Ethereum approval, adding one transaction and gas charge while limiting what the bridge can pull.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="The Crypto Execution Weekly Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Execution Weekly">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Manta Pacific ERC-20 Deposits Need Approval First">
+<meta property="og:description" content="Manta Pacific ERC-20 deposits require a separate Ethereum approval, adding one transaction and gas charge while limiting what the bridge can pull.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-manta-pacific-erc-20-deposits-need-approval-first-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Manta Pacific ERC-20 Deposits Need Approval First"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Manta Pacific ERC-20 Deposits Need Approval First">
+<meta name="twitter:description" content="Manta Pacific ERC-20 deposits require a separate Ethereum approval, adding one transaction and gas charge while limiting what the bridge can pull.">
+<meta property="article:published_time" content="2026-09-09T18:21:58+00:00">
+<meta property="article:section" content="Stablecoin settlement and bridge flows"><meta property="article:tag" content="Stablecoin settlement and bridge flows">
+<meta property="article:tag" content="Transaction ordering and execution costs">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s03b7d32e7e.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Execution Weekly" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/#article",
+      "headline": "Why Manta Pacific ERC-20 Deposits Need Approval First",
+      "isAccessibleForFree": true,
+      "description": "Manta Pacific ERC-20 deposits require a separate Ethereum approval, adding one transaction and gas charge while limiting what the bridge can pull.",
+      "datePublished": "2026-09-09T18:21:58+00:00",
+      "dateModified": "2026-09-09T18:21:58+00:00",
+      "url": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://ethereumnews.github.io/#org",
+        "name": "The Crypto Execution Weekly Editors"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "keywords": "Stablecoin settlement and bridge flows, Transaction ordering and execution costs",
+      "articleSection": "Stablecoin settlement and bridge flows",
+      "wordCount": 542,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/why-manta-pacific-erc-20-deposits-need-approval-first.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Manta Pacific ERC-20 Deposits Need Approval First",
+          "item": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Crypto Execution Weekly",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Crypto Execution Weekly",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Independent crypto news for active traders, tracing exchange builds, liquidity routes and protocol upgrades through their effects on fills, fees and flow."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/#webpage",
+      "url": "https://ethereumnews.github.io/why-manta-pacific-erc-20-deposits-need-approval-first/",
+      "name": "Approve ERC-20s Before Depositing to Manta Pacific",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5783c80" href="#main">Skip to the article</a>
+<header class="s98a308a"><a href="/"><strong>Crypto Execution Weekly</strong></a> <span>Crypto news on trading systems, liquidity and execution</span></header>
+
+<main id="main">
+<article class="s98a308a sc01c704" aria-labelledby="article-title">
+  <header class="se91b25a">
+    <div class="s5d2b493">
+      <p class="s8010ae3">Stablecoin settlement and bridge flows</p>
+      <a class="s9dfcf65" href="/">Crypto Execution Weekly</a>
+    </div>
+    <h1 id="article-title">Why Manta Pacific ERC-20 Deposits Need Approval First</h1>
+    <p class="s820e09d">Manta Pacific ERC-20 deposits require a separate Ethereum approval, adding one transaction and gas charge while limiting what the bridge can pull.</p>
+    <div class="sa130c3e">
+      <span class="sbb302fb">By The Crypto Execution Weekly Editors</span>
+      <time datetime="2026-09-09T18:21:58+00:00">Sep 9, 2026</time>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <figure class="s72d20a1">
+    <img src="/assets/covers/why-manta-pacific-erc-20-deposits-need-approval-first.jpg" alt="Why Manta Pacific ERC-20 Deposits Need Approval First" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="s7e15655">
+    <div class="saf45eaf"><p>An ERC-20 deposit to Manta Pacific fails before it starts when the token allowance is smaller than the amount being bridged. Owning the tokens is not enough: the Ethereum token contract must authorize the L1 Standard Bridge as a spender. The flow presented by <a href="https://mantabridge.co/" rel="noopener">Manta Bridge</a> can guide the clicks, but the wallet calldata and transaction receipts are the evidence that matters.</p>
+<h2>Why must you approve an ERC-20 before bridging?</h2>
+<p>Approval is required because the bridge pulls ERC-20s with a delegated transfer instead of receiving an ordinary wallet transfer. Suppose a trader wants to deposit 1,000 token units. The token contract first evaluates <strong>allowance(owner, bridge) ≥ 1,000</strong>. If that condition is false, the deposit cannot collect the assets. An approval sets the allowance; it does not move tokens, create a Manta Pacific balance or begin cross-chain settlement.</p>
+<h2>What happens after the approval confirms?</h2>
+<p>After approval, the deposit becomes a separate Ethereum transaction that escrows the token and starts the cross-domain message. One order therefore follows four inspectable steps:</p>
+<ul>
+<li>The wallet calls the ERC-20 token's approval function, naming the bridge as spender and setting an amount.</li>
+<li>Once mined, the token's allowance mapping reflects that permission and emits an Approval event.</li>
+<li>The wallet calls the bridge's ERC-20 deposit function; the bridge uses delegated transfer to take the stated amount into escrow.</li>
+<li>The bridge emits its initiation event, and the corresponding message later finalizes the mapped asset on Manta Pacific.</li>
+</ul>
+<p>A UI status such as “pending” is only a presentation layer. The approval receipt proves permission; the deposit receipt, token transfer and bridge event prove that settlement was actually initiated.</p>
+<h2>How much does approval add to a Manta deposit?</h2>
+<p>It adds one wallet submission, one Ethereum transaction and one L1 gas charge to a first-time ERC-20 deposit. Under the same base fee, a fresh ERC-20 route requires two mined transactions—approval plus deposit—while a native-ETH deposit or an ERC-20 deposit with sufficient existing allowance needs one. The token amount should not be treated as reduced by the approval fee: gas is paid separately in ETH. The real execution penalty is variable Ethereum gas plus the chance that fees change while the trader waits between confirmations.</p>
+<p>This makes approval materially worse for a one-off depositor than the single-transaction comparison, but reusable allowance can remove that extra step on the next order. There is no guaranteed dollar figure: approval gas varies by token implementation and transaction pricing, so the wallet's live estimate is more honest than a fixed fee claim.</p>
+<h2>Should you approve the exact amount or an unlimited amount?</h2>
+<p>For an occasional deposit, approving the exact amount is the better execution decision because it bounds the bridge's spending authority to the planned order. Unlimited approval can make repeated deposits one transaction each, but it leaves a persistent allowance until revoked; the frequent bridger saves future gas, while the wallet owner bears the larger authorization risk.</p>
+<p>The verdict is clear: approval improves execution control, not speed. Its measurable cost is one extra L1 transaction on the first order; its benefit is an enforceable spending ceiling. Before depositing, inspect the spender and amount in the wallet, read the token allowance after confirmation, then match the deposit receipt's transfer and bridge-initiation event against the balance credited on Manta Pacific.</p></div>
+
+    <section class="s165fde7" aria-labelledby="article-tags-title">
+      <h2 id="article-tags-title">Filed under</h2>
+      <ul>
+        <li>Stablecoin settlement and bridge flows</li>
+        <li>Transaction ordering and execution costs</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="s2d4dbee" aria-labelledby="related-title">
+    <header class="scdb3d44">
+      <h2 id="related-title">Further reading</h2>
+    </header>
+    <div class="sc1387fa">
+      <article class="sb82807c">
+        <h3><a href="/liquidity-pool-fees-pay-for-inventory-not-passive-capital/">Liquidity Pool Fees Pay for Inventory, Not Passive Capital</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/fee-markets-do-not-simply-put-the-highest-bid-first/">Fee Markets Do Not Simply Put the Highest Bid First</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/how-blockchains-synchronize-without-a-central-server/">How Blockchains Synchronize Without a Central Server</a></h3>
+      </article>
+      <article class="sb82807c">
+        <h3><a href="/the-rpc-endpoint-is-part-of-every-wallet-fill/">The RPC Endpoint Is Part of Every Wallet Fill</a></h3>
+      </article>
+    </div>
+  </section>
+</article>
+</main>
+
+<footer class="s98a308a"><nav><a href="/">Start</a> <a href="/privacy/">Privacy &amp; terms</a> <a href="/archive/">All articles</a> <a href="/about/">Masthead</a> </nav><nav><a href="/topics/liquidity-pools-and-order-routing/">Liquidity pools and order routing</a> <a href="/topics/transaction-ordering-and-execution-costs/">Transaction ordering and execution costs</a> <a href="/topics/stablecoin-settlement-and-bridge-flows/">Stablecoin settlement and bridge flows</a> <a href="/topics/protocol-upgrades-and-trading-integrations/">Protocol upgrades and trading integrations</a> <a href="/topics/exchange-engines-and-trading-apis/">Exchange engines and trading APIs</a> <a href="/topics/perpetuals-funding-and-liquidation-systems/">Perpetuals funding and liquidation systems</a> </nav><p>Crypto Execution Weekly is an independent publication, not affiliated with or endorsed by any protocol, exchange or project it covers; nothing here is financial advice.</p><p>© 2026 Crypto Execution Weekly</p></footer>
+</body>
+</html>
