@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-09-11</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/ethereums-gas-ceiling-now-bounds-every-contract-call/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/treasury-proposals-are-execution-policies-not-polls/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/recurring-escrow-works-only-when-the-money-arrives-first/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/what-ethereum-validators-actually-do-to-produce-a-block/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
