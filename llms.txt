@@ -1,11 +1,8 @@
-# Crypto Execution Weekly
+# Web3 Hub
 
-> Independent crypto news and analysis for active traders, focused on how trading systems are built and used.
+> Web3 Hub is an independent crypto newsroom that explains how protocols, blockchains, exchanges and regulation actually work, one moving part at a time.
 
 ## Key pages
-- [Homepage](https://ethereumnews.github.io/): Latest coverage of execution, liquidity and protocol changes.
-- [About](https://ethereumnews.github.io/about/): Editorial purpose, independence, sourcing and corrections policy.
-
-## Coverage
-Exchange engines, order routing, perpetuals, transaction ordering and settlement.
-Reporting connects implementation choices to fills, fees and liquidity flows.
+- [Homepage](https://ethereumnews.github.io/): latest reporting and analysis.
+- [About](https://ethereumnews.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://ethereumnews.github.io/archive/): everything published.
