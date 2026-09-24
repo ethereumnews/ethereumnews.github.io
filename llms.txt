@@ -1,6 +1,6 @@
-# Finality Post
+# Web3 Hub
 
-> Crypto news on Bitcoin, Ethereum and beyond: market moves, protocol upgrades, exchange and DeFi developments, regulation, security incidents and funding.
+> Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades.
 
 ## Key pages
 - [Homepage](https://ethereumnews.github.io/): latest reporting and analysis.
