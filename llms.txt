@@ -1,6 +1,6 @@
-# Web3 Hub
+# Finality Post
 
-> Web3 Hub is an independent crypto newsroom that explains how protocols, blockchains, exchanges and regulation actually work, one moving part at a time.
+> Crypto news on Bitcoin, Ethereum and beyond: market moves, protocol upgrades, exchange and DeFi developments, regulation, security incidents and funding.
 
 ## Key pages
 - [Homepage](https://ethereumnews.github.io/): latest reporting and analysis.
