@@ -1,7 +1,7 @@
 :root{
   --bg:#f1ebdf; --surface:#ebe3d3; --elevated:#f8f4ec;
   --text:#1b1711; --muted:#5e5548; --border:#d3c8b4;
-  --accent:#8f5300; --accent-ink:#fff8ec;
+  --accent:#8f5300; --accent-ink:#fff8ec; --accent-text:#8f5300;
   --font-display:"Newsreader", Georgia, serif;
   --font-body:"IBM Plex Sans", system-ui, sans-serif;
   --font-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -35,7 +35,7 @@ p{margin:0 0 1.1em}
 .s55ebc20 > *{max-width:68ch}
 .s55ebc20 h2{font-size:1.55rem; margin-top:1.9em}
 .s55ebc20 h3{font-size:1.22rem; margin-top:1.5em}
-.s55ebc20 a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.s55ebc20 a{color:var(--accent-text, var(--accent)); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
 .s55ebc20 a:hover{text-decoration-thickness:2px}
 .s55ebc20 ul,.s55ebc20 ol{padding-left:1.3em; margin:0 0 1.2em}
 .s55ebc20 li{margin:.35em 0}
