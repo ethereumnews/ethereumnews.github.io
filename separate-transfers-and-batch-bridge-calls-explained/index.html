@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Separate token transfers vs. batch bridge calls | Web3 Hub</title>
+<meta name="description" content="Separate token transfers give control over each asset; batch bridge calls reduce repeated setup, but add contract and failure-handling trade-offs for treasuries.">
+<link rel="canonical" href="https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Separate transfers and batch bridge calls, explained">
+<meta property="og:description" content="Separate token transfers give control over each asset; batch bridge calls reduce repeated setup, but add contract and failure-handling trade-offs for treasuries.">
+<meta property="og:url" content="https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/separate-transfers-and-batch-bridge-calls-explained-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Separate transfers and batch bridge calls, explained"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Separate transfers and batch bridge calls, explained">
+<meta name="twitter:description" content="Separate token transfers give control over each asset; batch bridge calls reduce repeated setup, but add contract and failure-handling trade-offs for treasuries.">
+<meta property="article:published_time" content="2026-09-29T19:08:42+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/#article",
+      "headline": "Separate transfers and batch bridge calls, explained",
+      "isAccessibleForFree": true,
+      "description": "Separate token transfers give control over each asset; batch bridge calls reduce repeated setup, but add contract and failure-handling trade-offs for treasuries.",
+      "datePublished": "2026-09-29T19:08:42+00:00",
+      "dateModified": "2026-09-29T19:08:42+00:00",
+      "url": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 464,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/separate-transfers-and-batch-bridge-calls-explained.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Separate transfers and batch bridge calls, explained",
+          "item": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/#webpage",
+      "url": "https://ethereumnews.github.io/separate-transfers-and-batch-bridge-calls-explained/",
+      "name": "Separate token transfers vs. batch bridge calls | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Separate transfers and batch bridge calls, explained</h1>
+<p class="sb43b948">Separate token transfers give control over each asset; batch bridge calls reduce repeated setup, but add contract and failure-handling trade-offs for treasuries.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-29T19:08:42+00:00">Sep 29, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/separate-transfers-and-batch-bridge-calls-explained.jpg" alt="Cover artwork for Separate transfers and batch bridge calls, explained">
+  </figure>
+  <div class="s55ebc20"><p>A separate token transfer sends one asset in its own transaction; a batch bridge call groups multiple instructions into one submission. The choice affects how many times a user signs, how fees are paid and what happens if one instruction fails.</p>
+
+<h2>What is the difference between a separate transfer and a batch call?</h2>
+<p>A separate transfer is an individual transaction for one asset or destination, while a batch call packages several actions for a contract or wallet to execute. A treasury moving two tokens may submit two transfers, or use a supported batch function to approve and bridge both in one call.</p>
+<p>Those are not always equivalent operations. A bridge may accept a batch from the user interface, then process each asset separately behind the scenes; another may require distinct transactions because its contracts do not support batching. For the operational details, see <a href="https://aboutcrypto.notion.site/aboutcrypto/How-to-Use-Manta-Bridge-for-Treasury-Transfers-3ea92170eaba80a2b242f91d1fe6dd2c" rel="noopener">Manta Bridge treasury transfer steps</a>; the number of assets and networks involved can change the sequence.</p>
+
+<h2>How does a batch bridge call work?</h2>
+<p>A batch call sends a list of instructions to a contract in one transaction, subject to the wallet and bridge supporting that function. The instructions might include token approvals and bridge deposits, but the exact sequence depends on the contract design and the assets being moved.</p>
+<p>One submission can mean fewer separate signing prompts and less repeated setup. It does not necessarily mean a lower total fee: the transaction still consumes network resources for every instruction, and a complex call may cost more than a simple transfer.</p>
+
+<h2>When should a treasury batch its transfers?</h2>
+<p>Batching is useful when several transfers use the same supported route and the treasury wants to reduce repeated approvals and submissions. Separate transactions are easier to review and reconcile when assets have different recipients, networks, timing needs or approval requirements.</p>
+<ul>
+<li>Use separate transfers when each asset needs independent review or timing.</li>
+<li>Consider a batch when the wallet and bridge explicitly support the combined actions.</li>
+<li>Compare the full fee estimate and check how the contract handles a failed instruction.</li>
+</ul>
+
+<h2>What can go wrong with a batch?</h2>
+<p>A batch can be all-or-nothing if its contract reverts when one instruction fails, but some systems may allow partial completion. The interface or contract documentation should make that behavior clear; otherwise, treat each asset’s status as something to verify separately.</p>
+<p>Approvals also matter: a batch may ask the wallet to authorize token spending as well as submit the bridge transaction. Review the token, amount, destination network and recipient before signing, and keep transaction records that show which assets completed.</p>
+<p>For most routine treasury work, batch only transfers that share a route and can be checked together; keep distinct or time-sensitive movements separate. The next step is to confirm the bridge’s supported batch flow and failure behavior before submitting.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/bridge-collateral-to-manta-pacific-before-borrowing/">Bridge Collateral to Manta Pacific Before Borrowing</a></li>
+      <li><a href="/pre-witnessing-can-speed-up-occasional-crypto-swaps/">Pre-witnessing can speed up occasional crypto swaps</a></li>
+      <li><a href="/where-your-crypto-goes-during-a-cross-chain-swap/">Where Your Crypto Goes During a Cross-Chain Swap</a></li>
+      <li><a href="/how-to-estimate-a-chainflip-swaps-output/">How to Estimate a Chainflip Swap’s Output</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
