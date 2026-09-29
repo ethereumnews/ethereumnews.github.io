@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blackhole swap: Pool types and stuck trades | Web3 Hub</title>
+<meta name="description" content="Blackhole Swap pairs DAI and USDC, combines pool reserves with Compound liquidity, and leaves traders to distinguish a pending Ethereum transaction from a reverted swap.">
+<link rel="canonical" href="https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Blackhole swap: How its pool works and why trades stall">
+<meta property="og:description" content="Blackhole Swap pairs DAI and USDC, combines pool reserves with Compound liquidity, and leaves traders to distinguish a pending Ethereum transaction from a reverted swap.">
+<meta property="og:url" content="https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/blackhole-swap-how-its-pool-works-and-why-trades-stall-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blackhole swap: How its pool works and why trades stall"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blackhole swap: How its pool works and why trades stall">
+<meta name="twitter:description" content="Blackhole Swap pairs DAI and USDC, combines pool reserves with Compound liquidity, and leaves traders to distinguish a pending Ethereum transaction from a reverted swap.">
+<meta property="article:published_time" content="2026-09-29T15:12:55+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/#article",
+      "headline": "Blackhole swap: How its pool works and why trades stall",
+      "isAccessibleForFree": true,
+      "description": "Blackhole Swap pairs DAI and USDC, combines pool reserves with Compound liquidity, and leaves traders to distinguish a pending Ethereum transaction from a reverted swap.",
+      "datePublished": "2026-09-29T15:12:55+00:00",
+      "dateModified": "2026-09-29T15:12:55+00:00",
+      "url": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 540,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/blackhole-swap-how-its-pool-works-and-why-trades-stall.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blackhole swap: How its pool works and why trades stall",
+          "item": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/#webpage",
+      "url": "https://ethereumnews.github.io/blackhole-swap-how-its-pool-works-and-why-trades-stall/",
+      "name": "Blackhole swap: Pool types and stuck trades | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Blackhole swap: How its pool works and why trades stall</h1>
+<p class="sb43b948">Blackhole Swap pairs DAI and USDC, combines pool reserves with Compound liquidity, and leaves traders to distinguish a pending Ethereum transaction from a reverted swap.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-29T15:12:55+00:00">Sep 29, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/blackhole-swap-how-its-pool-works-and-why-trades-stall.jpg" alt="Cover artwork for Blackhole swap: How its pool works and why trades stall">
+  </figure>
+  <div class="s55ebc20"><p>Blackhole Swap is an Ethereum stablecoin exchange for DAI and USDC, and a blackhole swap can stall because of either network delays or a failed contract check. Its liquidity combines assets held in the pool with access to Compound lending markets, so the quoted output depends on available liquidity, trade size, token prices and fees.</p>
+
+<h2>What pool types does Blackhole Swap use?</h2>
+
+<p>Blackhole Swap uses one DAI–USDC pair, with deposits accepted in DAI, USDC or both. That is a choice of deposit mix, not a menu of different pool designs: liquidity providers receive shares representing a claim on pool assets.</p>
+
+<p>The other distinction is where liquidity comes from. The protocol says Compound lending liquidity can extend the amount available beyond idle pool reserves; this may support larger swaps, but availability still depends on lending-market conditions and pool balances.</p>
+
+<p>If your next step is exchanging DAI and USDC, use <a href="https://blackholeswap.app" rel="noopener">blackholeswap.app</a>, a crypto swap platform. Before authorizing, compare the expected output with the minimum received: a slippage limit caps how far the price can move before execution reverts.</p>
+
+<h2>Why can a blackhole swap get stuck?</h2>
+
+<p>A pending Ethereum transaction has not yet settled on-chain; a reverted swap was included but failed its execution conditions. The first can wait because the offered gas price is too low for current demand, while the second can fail when the quote moves beyond the set slippage limit or a contract condition is no longer met.</p>
+
+<p>These statuses call for different responses. A pending transaction may block later transactions from the same wallet because Ethereum processes them in nonce order; a revert means the attempted swap did not complete, though gas can still be spent. Check the transaction hash in an Ethereum block explorer to see whether it is pending, successful or reverted before submitting again.</p>
+
+<h2>What should you check before retrying a stuck trade?</h2>
+
+<p>Check the transaction status first, then decide whether the issue is network inclusion or swap execution. A second swap sent while the first is still pending can create confusion: both transactions may compete for the same wallet sequence, or the original may eventually execute.</p>
+
+<ul>
+<li><strong>Pending:</strong> Review the gas fee and nonce in your wallet. Some wallets allow a speed-up or cancellation by submitting a replacement with the same nonce and a higher fee; follow the wallet’s instructions.</li>
+<li><strong>Reverted:</strong> Read the explorer’s result, then review the output amount, slippage limit and available ETH for gas before trying again.</li>
+<li><strong>Confirmed:</strong> Check the token balances and transaction details before starting another swap.</li>
+</ul>
+
+<p>For most small stablecoin exchanges, the practical choice is to use the pool’s quoted output and a slippage limit that reflects how much movement you will accept. A tighter limit protects the minimum received but can cause a revert if conditions change; widening it increases the price movement you permit.</p>
+
+<p>Liquidity providers face a different trade-off: swap fees and Compound interest can add to returns, but both depend on trading activity, lending rates and pool balances. A deposit can be withdrawn through liquidity shares, subject to available liquidity and contract conditions.</p>
+
+<p>The next decision is immediate: check the transaction’s on-chain status before retrying, then adjust the fee or slippage only if that status points to a pending transaction or a reverted swap.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/a-crypto-treasury-exit-plan-starts-before-the-drawdown/">A Crypto Treasury Exit Plan Starts Before the Drawdown</a></li>
+      <li><a href="/how-defi-tax-recordkeeping-tracks-swaps-fees-and-rewards/">How DeFi Tax Recordkeeping Tracks Swaps, Fees and Rewards</a></li>
+      <li><a href="/new-pair-pools-check-liquidity-before-you-trade/">New Pair Pools: Check Liquidity Before You Trade</a></li>
+      <li><a href="/tron-abi-decoding-adds-energy-through-contract-execution/">TRON ABI decoding adds Energy through contract execution</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
