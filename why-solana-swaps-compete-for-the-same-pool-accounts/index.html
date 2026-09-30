@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana pool contention: why swaps collide | Web3 Hub</title>
+<meta name="description" content="Solana swaps can compete for the same writable pool accounts, delaying execution and worsening price; routing, slippage limits and priority fees shape the trade-off.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Solana swaps compete for the same pool accounts">
+<meta property="og:description" content="Solana swaps can compete for the same writable pool accounts, delaying execution and worsening price; routing, slippage limits and priority fees shape the trade-off.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-solana-swaps-compete-for-the-same-pool-accounts-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Solana swaps compete for the same pool accounts"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Solana swaps compete for the same pool accounts">
+<meta name="twitter:description" content="Solana swaps can compete for the same writable pool accounts, delaying execution and worsening price; routing, slippage limits and priority fees shape the trade-off.">
+<meta property="article:published_time" content="2026-09-30T14:54:05+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/#article",
+      "headline": "Why Solana swaps compete for the same pool accounts",
+      "isAccessibleForFree": true,
+      "description": "Solana swaps can compete for the same writable pool accounts, delaying execution and worsening price; routing, slippage limits and priority fees shape the trade-off.",
+      "datePublished": "2026-09-30T14:54:05+00:00",
+      "dateModified": "2026-09-30T14:54:05+00:00",
+      "url": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 532,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/why-solana-swaps-compete-for-the-same-pool-accounts.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Solana swaps compete for the same pool accounts",
+          "item": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/#webpage",
+      "url": "https://ethereumnews.github.io/why-solana-swaps-compete-for-the-same-pool-accounts/",
+      "name": "Solana pool contention: why swaps collide | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why Solana swaps compete for the same pool accounts</h1>
+<p class="sb43b948">Solana swaps can compete for the same writable pool accounts, delaying execution and worsening price; routing, slippage limits and priority fees shape the trade-off.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-30T14:54:05+00:00">Sep 30, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/why-solana-swaps-compete-for-the-same-pool-accounts.jpg" alt="Cover artwork for Why Solana swaps compete for the same pool accounts">
+  </figure>
+  <div class="s55ebc20"><p>Solana swaps that write to the same liquidity pool account cannot run in parallel, so competing trades may wait, land against changed prices or fail their slippage checks. The conflict is about shared on-chain accounts, not simply how many people are using Solana.</p>
+
+<h2>Why do Solana swaps contend for a pool?</h2>
+<p>Each Solana transaction declares the accounts it reads and writes, and the runtime uses those permissions to decide which transactions can run at once. Transactions that write to the same account conflict; transactions touching separate writable accounts can be processed in parallel.</p>
+<p>A swap changes pool state, such as token reserves or concentrated-liquidity positions, and usually writes to token vault accounts too. When many swaps target one pool, they compete for those writable accounts. A transaction that executes later may face a different price than the one quoted when the wallet prepared it.</p>
+
+<h2>How do routes and pool design affect contention?</h2>
+<p>A direct route usually touches fewer pools than a multi-hop route, but it can still concentrate activity on one popular pool. A route through several pools may find a better quoted price, while requiring writes to more accounts and creating more places where the transaction can conflict.</p>
+<p>Pool design affects which accounts trades need to update. Concentrated-liquidity pools track liquidity across price ranges, so a swap’s path through those ranges can affect which state accounts it accesses. For more on deposits and concentrated liquidity, see <a href="https://paragraph.com/@anguspsschimmedfu95/byreal-pool-deposits-and-concentrated-liquidity-explained" rel="noopener">byreal</a>.</p>
+<p>That trade-off is why the lowest quoted price is not the only measure of a route. A wallet’s quote can change before execution, and a transaction may fail if the resulting price moves beyond the user’s slippage limit.</p>
+
+<h2>Can priority fees prevent a swap collision?</h2>
+<p>A priority fee can improve a transaction’s scheduling priority, but it does not reserve a pool account or guarantee execution first. Solana calculates the fee using the requested compute-unit limit and price, so asking for more compute than the transaction needs can increase the fee without resolving contention.</p>
+<p>Solana’s fee documentation describes scheduling priority as a ranking among transactions. The practical effect is that fees can help a swap compete for processing, while the writable-account conflict and the pool’s changing state still determine whether the trade can complete at its limits.</p>
+
+<h2>What should a trader check before confirming?</h2>
+<p>For most swaps, the useful checks are the quoted output, slippage tolerance, route and priority fee. A tighter slippage limit protects the minimum acceptable output but makes a transaction more likely to fail during a fast move; a looser limit can allow a worse price.</p>
+<ul>
+<li>Check whether the route uses one pool or several, and compare the quoted output.</li>
+<li>Set a slippage limit that reflects the price movement you are willing to accept.</li>
+<li>Review the priority fee and avoid paying for an unnecessarily large compute limit.</li>
+<li>If a swap fails, check its transaction status before retrying; Solana charges transaction fees even when execution fails.</li>
+</ul>
+<p>The takeaway is that pool contention is local to the accounts swaps share: a busy pool can slow or disrupt its own trades while unrelated pools remain available. Before confirming, compare the route and output; after a failed attempt, check the transaction status before sending another.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/check-liquidity-before-you-choose-a-cross-chain-bridge-route/">Check Liquidity Before You Choose a Cross-Chain Bridge Route</a></li>
+      <li><a href="/how-to-fund-gas-after-a-treasury-bridge-transfer/">How to Fund Gas After a Treasury Bridge Transfer</a></li>
+      <li><a href="/fraud-proofs-keep-invalid-l2-withdrawals-from-reaching-ethereum/">Fraud proofs keep invalid L2 withdrawals from reaching Ethereum</a></li>
+      <li><a href="/ethereum-to-mantle-deposits-can-wait-at-two-different-stages/">Ethereum-to-Mantle deposits can wait at two different stages</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
