@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blackhole swap routes: fees, depth and price impact</title>
+<meta name="description" content="A Blackhole swap route is only cheaper when fee savings outweigh price impact; compare quoted output, usable pool depth and every hop before signing.">
+<link rel="canonical" href="https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Blackhole swap routes: when lower fees lose to shallow pools">
+<meta property="og:description" content="A Blackhole swap route is only cheaper when fee savings outweigh price impact; compare quoted output, usable pool depth and every hop before signing.">
+<meta property="og:url" content="https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blackhole swap routes: when lower fees lose to shallow pools"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blackhole swap routes: when lower fees lose to shallow pools">
+<meta name="twitter:description" content="A Blackhole swap route is only cheaper when fee savings outweigh price impact; compare quoted output, usable pool depth and every hop before signing.">
+<meta property="article:published_time" content="2026-09-30T16:34:54+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/#article",
+      "headline": "Blackhole swap routes: when lower fees lose to shallow pools",
+      "isAccessibleForFree": true,
+      "description": "A Blackhole swap route is only cheaper when fee savings outweigh price impact; compare quoted output, usable pool depth and every hop before signing.",
+      "datePublished": "2026-09-30T16:34:54+00:00",
+      "dateModified": "2026-09-30T16:34:54+00:00",
+      "url": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 508,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blackhole swap routes: when lower fees lose to shallow pools",
+          "item": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/#webpage",
+      "url": "https://ethereumnews.github.io/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools/",
+      "name": "Blackhole swap routes: fees, depth and price impact",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Blackhole swap routes: when lower fees lose to shallow pools</h1>
+<p class="sb43b948">A Blackhole swap route is only cheaper when fee savings outweigh price impact; compare quoted output, usable pool depth and every hop before signing.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-30T16:34:54+00:00">Sep 30, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/blackhole-swap-routes-when-lower-fees-lose-to-shallow-pools.jpg" alt="Cover artwork for Blackhole swap routes: when lower fees lose to shallow pools">
+  </figure>
+  <div class="s55ebc20"><p>A Blackhole swap route trades pool fees against price impact, so the cheapest-fee path may deliver less of the token you want. The deciding figure is the output after fees and price impact for your trade size, not the fee rate viewed alone.</p>
+
+<p>Blackhole’s docs describe three automated market maker types: concentrated-liquidity, classic UniV2-style and stablecoin pools. Each has different liquidity and pricing mechanics; a pool’s displayed balance does not necessarily show how much is available near the current price. For a walkthrough of the trade flow, see <a href="https://www.tumblr.com/hubspotcrypto/829103399317438464/what-does-a-blackhole-swap-actually-do" rel="noopener">Blackhole swap steps for Avalanche trades</a>.</p>
+
+<h2>How do fees and pool depth affect a swap?</h2>
+
+<p>A pool fee is charged on a swap through that pool, while price impact comes from the trade moving the pool’s price. Blackhole says traders pay swap fees that incentivize liquidity, and its docs describe pools with different AMM models. The fee and depth can therefore vary by route.</p>
+
+<p>In a shallow pool, a large order uses more of the available liquidity and can move the price further against the trader. A deeper pool may charge a higher fee yet produce a better final output because the trade creates less price impact. For a multi-hop route, each pool adds its own fee and another point where liquidity can affect the price.</p>
+
+<h2>When can a multi-hop route beat a direct pool?</h2>
+
+<p>A multi-hop route can improve the result when its pools together offer better prices and depth than the direct pair, even after fees from every leg. It can also lose: extra fees accumulate, and a thin intermediate pool can erase the benefit of routing through it.</p>
+
+<p>Concentrated liquidity adds another constraint. Liquidity providers choose a price range, so only liquidity active around the current price helps execute a trade. A pool may look large in total, but if little liquidity sits near the trading price, a sizable swap can still face material price impact.</p>
+
+<p>Compare the displayed output for the same input amount and settings. If the interface shows a route breakdown, check the pools and hops; a lower fee on one leg does not establish that the full route is cheaper. Also distinguish the pool’s swap fee from any network transaction cost shown separately.</p>
+
+<h2>What should traders check before signing?</h2>
+
+<p>Use the quoted output after fees as the main comparison, then inspect the route for costs or risks the headline fee hides. For a volatile or newly launched token, recheck the quote immediately before signing: pool balances and prices can change between quote and execution.</p>
+
+<ul>
+<li>Compare final output for the same input and slippage setting.</li>
+<li>Check each hop’s pool and fee, where the interface provides that detail.</li>
+<li>Look for price impact as well as the fee rate; shallow active liquidity can dominate the cost.</li>
+<li>Set a slippage limit that fits the trade, and cancel if the expected output changes beyond it.</li>
+</ul>
+
+<p>For most trades, choose the route with the strongest quoted output at an acceptable slippage limit, not simply the lowest displayed pool fee. Review the quote again just before confirming the transaction.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/low-swap-quote-check-price-impact-before-you-trade/">Low Swap Quote? Check Price Impact Before You Trade</a></li>
+      <li><a href="/avalanche-swaps-set-slippage-against-the-minimum-output/">Avalanche swaps: set slippage against the minimum output</a></li>
+      <li><a href="/amm-pool-creation-why-a-duplicate-pair-can-fail/">AMM Pool Creation: Why a Duplicate Pair Can Fail</a></li>
+      <li><a href="/base-swap-slippage-set-the-limit-to-fit-the-trade/">Base swap slippage: set the limit to fit the trade</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
