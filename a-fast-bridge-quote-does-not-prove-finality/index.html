@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto bridge finality: what to check before you transfer</title>
+<meta name="description" content="A bridge&#39;s fast quote can reflect fronted liquidity, not settled source-chain finality; check confirmations, proof design and exit rules before moving assets.">
+<link rel="canonical" href="https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A fast bridge quote does not prove finality">
+<meta property="og:description" content="A bridge&#39;s fast quote can reflect fronted liquidity, not settled source-chain finality; check confirmations, proof design and exit rules before moving assets.">
+<meta property="og:url" content="https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/a-fast-bridge-quote-does-not-prove-finality-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A fast bridge quote does not prove finality"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A fast bridge quote does not prove finality">
+<meta name="twitter:description" content="A bridge&#39;s fast quote can reflect fronted liquidity, not settled source-chain finality; check confirmations, proof design and exit rules before moving assets.">
+<meta property="article:published_time" content="2026-09-30T10:34:17+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/#article",
+      "headline": "A fast bridge quote does not prove finality",
+      "isAccessibleForFree": true,
+      "description": "A bridge's fast quote can reflect fronted liquidity, not settled source-chain finality; check confirmations, proof design and exit rules before moving assets.",
+      "datePublished": "2026-09-30T10:34:17+00:00",
+      "dateModified": "2026-09-30T10:34:17+00:00",
+      "url": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 550,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/a-fast-bridge-quote-does-not-prove-finality.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A fast bridge quote does not prove finality",
+          "item": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/#webpage",
+      "url": "https://ethereumnews.github.io/a-fast-bridge-quote-does-not-prove-finality/",
+      "name": "Crypto bridge finality: what to check before you transfer",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">A fast bridge quote does not prove finality</h1>
+<p class="sb43b948">A bridge&#39;s fast quote can reflect fronted liquidity, not settled source-chain finality; check confirmations, proof design and exit rules before moving assets.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-30T10:34:17+00:00">Sep 30, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/a-fast-bridge-quote-does-not-prove-finality.jpg" alt="Cover artwork for A fast bridge quote does not prove finality">
+  </figure>
+  <div class="s55ebc20"><p>A cross-chain bridge can make tokens spendable on a destination chain before the source-chain transaction reaches finality, separating speed from settlement. The route’s estimate tells you how quickly the service expects to deliver funds; it does not, by itself, explain when the transfer becomes difficult to reverse.</p>
+
+<p>That gap matters because a bridge coordinates two ledgers that do not share one transaction history. For a fuller account of how routing choices affect transfers, see <a href="https://recondite-eagle-70f.notion.site/Fermi-Swap-Move-Tokens-Across-Chains-in-One-Route-3ebf099ed8ea809a98b7cd1115718344" rel="noopener">fermi swap</a>. The essential check is whether the bridge waits for source-chain settlement or takes on that timing risk itself.</p>
+
+<h2>What does finality mean for a bridge transfer?</h2>
+
+<p>Finality is the point at which a chain treats a transaction as settled under its consensus rules. Ethereum.org’s proof-of-stake documentation, for example, describes finalized blocks as requiring a supermajority link between checkpoints; a merely included transaction has not necessarily reached that state.</p>
+
+<p>Chains differ in how they express confidence. Some use explicit finalized status, while others rely on added blocks or confirmations to make a reversal less likely. A bridge must decide which signal it trusts, and its own transfer status may advance on a different schedule from the underlying chain.</p>
+
+<h2>Why can a bridge look faster than settlement?</h2>
+
+<p>Some routes wait for source-chain evidence before releasing destination assets. Others can use liquidity providers to send funds ahead of full settlement, then reconcile the transfer later; the provider supplies speed, while accepting the risk that the source transaction is delayed, reversed or fails the route’s checks.</p>
+
+<p>“Completed” can therefore describe different milestones: a source transaction was observed, destination funds were credited, or the route’s settlement process finished. The route’s terms and status details should say which one applies. A short quoted time is useful for planning, but it is not a substitute for knowing who covers a failed or disputed transfer.</p>
+
+<h2>What should you check before choosing a route?</h2>
+
+<p>Compare the route’s finality policy and failure handling, not just its delivery estimate. For a transfer you cannot afford to have delayed or disputed, waiting for stronger source-chain confirmation is usually the simpler choice; faster execution can make sense when the route explains how it manages the interim risk.</p>
+
+<ul>
+<li>Check whether the route waits for finalized blocks, a stated number of confirmations, or another proof.</li>
+<li>Find out whether funds are sent only after that check or advanced by a liquidity provider.</li>
+<li>Read what happens if the source transaction fails, the destination credit is delayed, or the route pauses.</li>
+<li>Compare the expected time with the fees, limits and assets supported for that specific transfer.</li>
+</ul>
+
+<p>When bridge documentation is vague, treat the displayed time as an estimate rather than a settlement guarantee. A little extra waiting can be the better trade for a large or time-sensitive transfer, especially when the route’s recovery process is unclear.</p>
+
+<h2>What happens after the transfer starts?</h2>
+
+<p>Track the source transaction and the destination credit separately. First confirm that the source transaction reached the level of finality the route requires; then check that the destination chain recorded the corresponding transfer. If the bridge says it is still processing, use its published status and recovery steps before attempting the transfer again.</p>
+
+<p>On your next transfer, check the route’s finality rule before approving it, then monitor both chains until the destination funds arrive and the route reports settlement.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-bungee-handles-cross-chain-token-swaps/">How Bungee Handles Cross-Chain Token Swaps</a></li>
+      <li><a href="/wrapped-and-native-tokens-on-manta-pacific-serve-different-roles/">Wrapped and native tokens on Manta Pacific serve different roles</a></li>
+      <li><a href="/bridge-fees-can-buy-faster-withdrawals-at-a-price/">Bridge Fees Can Buy Faster Withdrawals, at a Price</a></li>
+      <li><a href="/how-to-tell-if-tracked-wallets-are-buying-a-falling-token/">How to tell if tracked wallets are buying a falling token</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
