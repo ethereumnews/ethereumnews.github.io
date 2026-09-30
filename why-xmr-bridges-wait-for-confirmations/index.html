@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why an XMR Bridge Waits for Confirmations | Web3 Hub</title>
+<meta name="description" content="An XMR bridge waits for blocks on Monero before releasing tokens elsewhere, using confirmations to reduce reorg risk; each bridge sets its own release threshold.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why XMR Bridges Wait for Confirmations">
+<meta property="og:description" content="An XMR bridge waits for blocks on Monero before releasing tokens elsewhere, using confirmations to reduce reorg risk; each bridge sets its own release threshold.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-xmr-bridges-wait-for-confirmations-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why XMR Bridges Wait for Confirmations"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why XMR Bridges Wait for Confirmations">
+<meta name="twitter:description" content="An XMR bridge waits for blocks on Monero before releasing tokens elsewhere, using confirmations to reduce reorg risk; each bridge sets its own release threshold.">
+<meta property="article:published_time" content="2026-09-30T01:07:12+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/#article",
+      "headline": "Why XMR Bridges Wait for Confirmations",
+      "isAccessibleForFree": true,
+      "description": "An XMR bridge waits for blocks on Monero before releasing tokens elsewhere, using confirmations to reduce reorg risk; each bridge sets its own release threshold.",
+      "datePublished": "2026-09-30T01:07:12+00:00",
+      "dateModified": "2026-09-30T01:07:12+00:00",
+      "url": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 554,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/why-xmr-bridges-wait-for-confirmations.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why XMR Bridges Wait for Confirmations",
+          "item": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/#webpage",
+      "url": "https://ethereumnews.github.io/why-xmr-bridges-wait-for-confirmations/",
+      "name": "Why an XMR Bridge Waits for Confirmations | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why XMR Bridges Wait for Confirmations</h1>
+<p class="sb43b948">An XMR bridge waits for blocks on Monero before releasing tokens elsewhere, using confirmations to reduce reorg risk; each bridge sets its own release threshold.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-30T01:07:12+00:00">Sep 30, 2026</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/why-xmr-bridges-wait-for-confirmations.jpg" alt="Cover artwork for Why XMR Bridges Wait for Confirmations">
+  </figure>
+  <div class="s55ebc20"><p>An XMR bridge waits for Monero confirmations before releasing the corresponding asset on another chain, because a deposit included in a block can still be treated as provisional while more blocks build on it. The wait gives the bridge more evidence that the deposit will remain part of Monero’s accepted chain.</p>
+
+<p>That delay is part of the bridge’s security rule, not necessarily a sign that a transfer has failed. If an XMR transfer appears stuck, this guide explains <a href="https://newscryptoworld.github.io/how-to-use-zerofi-when-an-xmr-transfer-stalls/" rel="noopener">using ZeroFi for a stalled XMR transfer</a>; first, it helps to understand what the bridge is waiting for.</p>
+
+<h2>What does a Monero confirmation mean?</h2>
+
+<p>A confirmation means a miner has included the transaction in a block. Monero’s official payment guide says the first confirmation takes about two minutes on average, though it can take longer; each later block adds another confirmation.</p>
+
+<p>Those later blocks matter because blockchains can reorganize: a competing chain may replace recent blocks, changing which transactions count as confirmed. A bridge that releases assets as soon as a deposit appears in one block takes more risk that the deposit could later disappear from the accepted chain.</p>
+
+<h2>Why does a bridge need more than one confirmation?</h2>
+
+<p>A bridge needs enough confirmations to meet its own risk threshold before it treats an XMR deposit as settled. Once it accepts the deposit, it can trigger the next step, such as issuing a token on another network or crediting a destination-chain account.</p>
+
+<p>More confirmations reduce the chance that a recent block will be replaced, but they cost time. The bridge operator has to balance faster transfers against the risk of releasing value for a deposit that does not hold. There is no single threshold that applies to every bridge: the service’s design and rules determine when it proceeds.</p>
+
+<h2>Why can an XMR bridge take longer than an XMR payment?</h2>
+
+<p>A wallet can mark a transaction confirmed after a miner includes it in a block. A bridge may continue counting blocks after that, so the recipient can see a confirmed XMR payment while the bridge still shows a pending transfer.</p>
+
+<p>Monero’s guide also says users need at least 10 confirmations before they can spend received funds. That wallet rule is a useful comparison, but it does not establish the threshold for a specific bridge. The bridge may use a different requirement for its cross-chain release.</p>
+
+<h2>What should you check while the bridge waits?</h2>
+
+<p>Check the transfer status and confirmation count in the bridge’s own interface, then compare them with the transaction’s status in your Monero wallet. Monero’s guide says the wallet shows the block height and how many blocks have been mined since the transaction was included.</p>
+
+<ul>
+<li>If the transaction is still pending in Monero, the bridge may not have a confirmed deposit to process.</li>
+<li>If Monero shows confirmations but the bridge is waiting, check the bridge’s required count and status instructions.</li>
+<li>If the bridge’s count stops advancing, use its support route and provide the transfer details it requests.</li>
+<li>Do not send a second deposit just because the first one has not reached the release threshold.</li>
+</ul>
+
+<p>The next milestone is the bridge’s confirmation target: once the deposit reaches it, the service can proceed under its stated process. If it does not, the bridge’s status page or support channel is the place to check what action comes next.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/monero-restore-height-can-hide-a-bridge-refund/">Monero Restore Height Can Hide a Bridge Refund</a></li>
+      <li><a href="/why-bridges-pause-during-chain-hard-forks/">Why Bridges Pause During Chain Hard Forks</a></li>
+      <li><a href="/cross-chain-swap-quote-changed-check-the-route-and-minimum/">Cross-chain swap quote changed? Check the route and minimum</a></li>
+      <li><a href="/treasury-teams-need-two-sided-records-to-reconcile-polygon-bridge-flow/">Treasury teams need two-sided records to reconcile Polygon Bridge flows</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
