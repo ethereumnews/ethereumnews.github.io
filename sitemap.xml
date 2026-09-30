@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-09-30</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/base-swap-slippage-set-the-limit-to-fit-the-trade/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/what-a-wrapped-token-represents-after-a-cross-chain-transfer/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/bridge-routes-trade-speed-for-settlement-certainty/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/four-decisions-shape-live-oracle-slippage-protection/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -80,5 +81,6 @@
 <url><loc>https://ethereumnews.github.io/page/5/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/page/6/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/page/7/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/8/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/archive/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
