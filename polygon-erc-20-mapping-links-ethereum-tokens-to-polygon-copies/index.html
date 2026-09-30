@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon Bridge ERC-20 mapping: how token transfers work</title>
+<meta name="description" content="An ERC-20 reaches Polygon PoS through a mapped child contract: the bridge locks tokens on Ethereum, mints a matching balance, and reverses that flow on withdrawal.">
+<link rel="canonical" href="https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Polygon ERC-20 mapping links Ethereum tokens to Polygon copies">
+<meta property="og:description" content="An ERC-20 reaches Polygon PoS through a mapped child contract: the bridge locks tokens on Ethereum, mints a matching balance, and reverses that flow on withdrawal.">
+<meta property="og:url" content="https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Polygon ERC-20 mapping links Ethereum tokens to Polygon copies"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Polygon ERC-20 mapping links Ethereum tokens to Polygon copies">
+<meta name="twitter:description" content="An ERC-20 reaches Polygon PoS through a mapped child contract: the bridge locks tokens on Ethereum, mints a matching balance, and reverses that flow on withdrawal.">
+<meta property="article:published_time" content="2026-09-30T13:17:24+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/#article",
+      "headline": "Polygon ERC-20 mapping links Ethereum tokens to Polygon copies",
+      "isAccessibleForFree": true,
+      "description": "An ERC-20 reaches Polygon PoS through a mapped child contract: the bridge locks tokens on Ethereum, mints a matching balance, and reverses that flow on withdrawal.",
+      "datePublished": "2026-09-30T13:17:24+00:00",
+      "dateModified": "2026-09-30T13:17:24+00:00",
+      "url": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 467,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/covers/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Polygon ERC-20 mapping links Ethereum tokens to Polygon copies",
+          "item": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/#webpage",
+      "url": "https://ethereumnews.github.io/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies/",
+      "name": "Polygon Bridge ERC-20 mapping: how token transfers work",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Polygon ERC-20 mapping links Ethereum tokens to Polygon copies</h1>
+<p class="sb43b948">An ERC-20 reaches Polygon PoS through a mapped child contract: the bridge locks tokens on Ethereum, mints a matching balance, and reverses that flow on withdrawal.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-09-30T13:17:24+00:00">Sep 30, 2026</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/polygon-erc-20-mapping-links-ethereum-tokens-to-polygon-copies.jpg" alt="Cover artwork for Polygon ERC-20 mapping links Ethereum tokens to Polygon copies">
+  </figure>
+  <div class="s55ebc20"><p>Polygon PoS maps an Ethereum ERC-20 to a child token contract so the bridge can lock tokens on Ethereum and issue a matching balance on Polygon. The token’s code and Ethereum balance do not move; the two contracts keep separate balances on separate chains.</p>
+
+<h2>What does token mapping connect?</h2>
+<p>Mapping connects an Ethereum “root” token contract with its Polygon “child” contract. The bridge records that relationship so deposits and withdrawals affect the correct token on each chain. The child contract has its own address and state, even when it shares the root token’s name, symbol and decimals.</p>
+
+<p>For standard tokens, Polygon’s FxPortal supports permissionless mapping to a standard child token. The PoS bridge also supports mapped custom child contracts, which may require a mapping request. A <a href="https://paragraph.com/@owofadanuvoj67/what-is-polygon-bridge-and-how-do-you-move-tokens" rel="noopener">fuller guide to Polygon Bridge transfers</a> covers the user flow; the key detail here is that mapping establishes which contract represents the asset on the destination chain.</p>
+
+<h2>How does an ERC-20 deposit reach Polygon?</h2>
+<p>A deposit starts when the holder approves the bridge to use the ERC-20, then submits the transfer from Ethereum. The bridge locks the deposited tokens in its Ethereum-side contract and sends a message to Polygon; the mapped child contract then credits the recipient with the corresponding amount.</p>
+
+<p>That balance is usable on Polygon PoS, but it is not the original Ethereum balance. The bridge’s accounting ties the two sides together: tokens locked on Ethereum back the child tokens issued on Polygon. Mapping lets the bridge identify the matching contracts; it does not copy the Ethereum contract or its history.</p>
+
+<p>Before depositing, check these details:</p>
+<ul>
+<li>Confirm the token’s Ethereum contract address, not just its ticker or name.</li>
+<li>Check that the bridge supports the token and that its Polygon child contract is the intended match.</li>
+<li>Make sure the receiving wallet address and destination network are correct.</li>
+<li>Keep enough native gas tokens on each network for the transactions you plan to make.</li>
+</ul>
+
+<h2>What happens when tokens return to Ethereum?</h2>
+<p>A withdrawal burns the corresponding child tokens on Polygon and starts a bridge exit back to Ethereum. After the required bridge proof and exit process, the Ethereum-side contract releases the locked tokens to the recipient. The reverse transfer can take longer than a deposit because the exit must be verified before funds are released.</p>
+
+<p>For most holders, the practical choice is to use the supported bridge route for the exact token and verify both contract addresses before confirming. A ticker match alone is not enough: unrelated tokens can use the same name, and a token on Polygon is a separate contract from its Ethereum counterpart. The next step after a deposit is to confirm the transaction on Ethereum, then check for the credited child token on Polygon; after a withdrawal, follow the bridge’s exit status until the Ethereum release is complete.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/bridge-lockup-risk-how-cross-chain-tokens-can-get-stuck/">Bridge Lockup Risk: How Cross-Chain Tokens Can Get Stuck</a></li>
+      <li><a href="/block-height-vesting-needs-one-clock-across-chains/">Block-Height Vesting Needs One Clock Across Chains</a></li>
+      <li><a href="/how-to-reconcile-treasury-payouts-across-chains/">How to Reconcile Treasury Payouts Across Chains</a></li>
+      <li><a href="/how-much-usdc-a-cross-chain-swap-delivers/">How Much USDC a Cross-Chain Swap Delivers</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
