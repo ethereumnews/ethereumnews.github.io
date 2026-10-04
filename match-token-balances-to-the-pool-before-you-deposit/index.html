@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Rebalance Tokens Before Funding a Pool | Web3 Hub</title>
+<meta name="description" content="Rebalance to the pool’s required token mix, then check swap costs, price impact and deposit rules before funding a liquidity position.">
+<link rel="canonical" href="https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Match token balances to the pool before you deposit">
+<meta property="og:description" content="Rebalance to the pool’s required token mix, then check swap costs, price impact and deposit rules before funding a liquidity position.">
+<meta property="og:url" content="https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/match-token-balances-to-the-pool-before-you-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Match token balances to the pool before you deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Match token balances to the pool before you deposit">
+<meta name="twitter:description" content="Rebalance to the pool’s required token mix, then check swap costs, price impact and deposit rules before funding a liquidity position.">
+<meta property="article:published_time" content="2026-10-04T16:22:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/#article",
+      "headline": "Match token balances to the pool before you deposit",
+      "isAccessibleForFree": true,
+      "description": "Rebalance to the pool’s required token mix, then check swap costs, price impact and deposit rules before funding a liquidity position.",
+      "datePublished": "2026-10-04T16:22:51+00:00",
+      "dateModified": "2026-10-04T16:22:51+00:00",
+      "url": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 460,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/match-token-balances-to-the-pool-before-you-deposit-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/match-token-balances-to-the-pool-before-you-deposit-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/match-token-balances-to-the-pool-before-you-deposit-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Match token balances to the pool before you deposit",
+          "item": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/#webpage",
+      "url": "https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/",
+      "name": "How to Rebalance Tokens Before Funding a Pool | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Match token balances to the pool before you deposit</h1>
+<p class="sb43b948">Rebalance to the pool’s required token mix, then check swap costs, price impact and deposit rules before funding a liquidity position.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-04T16:22:51+00:00">Oct 4, 2026</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img fetchpriority="high" class="s93efac2" src="/assets/covers/match-token-balances-to-the-pool-before-you-deposit.jpg" alt="Cover artwork for Match token balances to the pool before you deposit">
+  </figure>
+  <div class="s55ebc20"><p>Before funding a liquidity pool, rebalance your tokens to match the pool’s deposit requirements and account for the cost of any swaps. The required mix depends on the pool design: some deposits track the pool’s current token proportions, while concentrated-liquidity positions can require different amounts depending on their price range.</p>
+
+<h2>How do you work out the token amounts?</h2>
+
+<p>Start with the pool’s deposit screen or documentation, which should show the amounts accepted for each token. For a proportional deposit, compare the value of each token you hold with the value the pool requires; swap only enough to bring the two sides into line.</p>
+
+<p>For example, if the pool requires equal value in two tokens, but your wallet holds twice as much value in one, you can swap part of that balance into the other token. The exact amount depends on the live exchange rate and the pool’s rules, so use the displayed deposit amounts rather than assuming a fixed token ratio.</p>
+
+<h2>What should you check before swapping?</h2>
+
+<p>Estimate the full cost of reaching the required mix before you trade. A swap can incur a trading fee and price impact; the latter can make the execution price worse as the trade size grows relative to available liquidity.</p>
+
+<ul>
+  <li>Confirm the pool’s network and the token addresses.</li>
+  <li>Check the expected output, fee and price impact for each swap.</li>
+  <li>Leave enough of the network’s native token to pay transaction fees.</li>
+  <li>Compare the cost of rebalancing with the value of the position you plan to fund.</li>
+</ul>
+
+<p>For a fuller walkthrough of wallet and token-address checks, see <a href="https://dev.to/kendra_koepp/fermi-swap-in-6-steps-wallet-and-token-address-checks-2167" rel="noopener">fermi swap</a>. These checks matter because token symbols can look alike while referring to different assets or networks.</p>
+
+<h2>When should you rebalance?</h2>
+
+<p>Rebalance immediately before funding, using the amounts the pool accepts at that time. Prices and pool balances can move between a swap and a deposit, leaving you with too much of one token or an amount the pool cannot use.</p>
+
+<p>For concentrated-liquidity positions, check the selected price range as well as the token mix. A position opened near one edge of its range may require mostly one token; changing the range changes the amounts needed and the prices at which the position stops earning fees.</p>
+
+<h2>Is it better to swap first or deposit as-is?</h2>
+
+<p>For most depositors, a small, deliberate rebalance is easier to assess than depositing an unsuitable mix and relying on a pool interface to handle the difference. Some interfaces may perform swaps as part of a deposit, but compare their quoted cost and accepted amounts with a separate swap before confirming.</p>
+
+<p>Once the wallet holds the required amounts, review the final deposit values and transaction fees, then submit the funding transaction. Check the position in your wallet or pool interface after it confirms.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/keep-both-sides-of-a-cross-chain-swap-in-your-crypto-tax-lots/">Keep both sides of a cross-chain swap in your crypto tax lots</a></li>
+      <li><a href="/how-to-recover-funds-after-a-cross-chain-swap-reverts/">How to Recover Funds After a Cross-Chain Swap Reverts</a></li>
+      <li><a href="/why-your-wallet-balance-falls-after-a-reverted-swap/">Why your wallet balance falls after a reverted swap</a></li>
+      <li><a href="/check-bnb-chain-liquidity-before-you-trade/">Check BNB Chain Liquidity Before You Trade</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Editorially independent. This is not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
