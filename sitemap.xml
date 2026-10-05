@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-10-04</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-10-05</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/fiserv-platform-goes-live-with-north-dakota-stablecoin/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/how-early-pool-pricing-works-for-avalanche-integrators/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/how-frequent-swappers-should-compare-omnichain-route-estimates/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/match-token-balances-to-the-pool-before-you-deposit/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -113,5 +114,7 @@
 <url><loc>https://ethereumnews.github.io/page/8/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/page/9/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/page/10/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/11/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://ethereumnews.github.io/archive/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/archive/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
