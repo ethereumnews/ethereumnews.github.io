@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://ethereumnews.github.io/read-the-destination-amount-before-you-bridge/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/cross-chain-payouts-trade-speed-for-simpler-treasury-settlement/</loc><lastmod>2026-10-16T02:39:20+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/what-happens-when-you-bridge-crypto-to-another-chain/</loc><lastmod>2026-10-16T00:51:46+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -131,22 +132,23 @@
 <url><loc>https://ethereumnews.github.io/how-to-spot-a-large-holder-selling-in-steady-trading/</loc><lastmod>2026-09-27T19:36:48+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/poocoin-chart-workflow-find-the-right-pair-before-reading-price/</loc><lastmod>2026-09-27T19:30:17+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ethereumnews.github.io/blockchain-com-nyse-sign-tokenized-stocks-mou/</loc><lastmod>2026-09-24T20:40:48+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://ethereumnews.github.io/archive/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><priority>0.3</priority></url>
+<url><loc>https://ethereumnews.github.io/archive/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><priority>0.3</priority></url>
 <url><loc>https://ethereumnews.github.io/about/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
 <url><loc>https://ethereumnews.github.io/privacy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
 <url><loc>https://ethereumnews.github.io/how-we-report/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
-<url><loc>https://ethereumnews.github.io/page/2/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/3/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/4/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/5/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/6/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/7/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/8/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/9/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/10/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/11/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/12/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/page/13/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/archive/page/2/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://ethereumnews.github.io/archive/page/3/</loc><lastmod>2026-10-16T04:21:20+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/2/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/3/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/4/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/5/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/6/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/7/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/8/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/9/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/10/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/11/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/12/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/13/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/page/14/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/archive/page/2/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://ethereumnews.github.io/archive/page/3/</loc><lastmod>2026-10-16T06:22:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
