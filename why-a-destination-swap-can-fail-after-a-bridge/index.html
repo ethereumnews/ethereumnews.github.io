@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destination swap reverts after bridging: what to do</title>
+<meta name="description" content="A failed destination swap can leave bridged tokens on the receiving chain; check both transaction records and the token balance before retrying or sending funds again.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a destination swap can fail after a bridge">
+<meta property="og:description" content="A failed destination swap can leave bridged tokens on the receiving chain; check both transaction records and the token balance before retrying or sending funds again.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-a-destination-swap-can-fail-after-a-bridge-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a destination swap can fail after a bridge"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a destination swap can fail after a bridge">
+<meta name="twitter:description" content="A failed destination swap can leave bridged tokens on the receiving chain; check both transaction records and the token balance before retrying or sending funds again.">
+<meta property="article:published_time" content="2026-10-16T17:56:13+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/#article",
+      "headline": "Why a destination swap can fail after a bridge",
+      "isAccessibleForFree": true,
+      "description": "A failed destination swap can leave bridged tokens on the receiving chain; check both transaction records and the token balance before retrying or sending funds again.",
+      "datePublished": "2026-10-16T17:56:13+00:00",
+      "dateModified": "2026-10-16T17:56:13+00:00",
+      "url": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 444,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-a-destination-swap-can-fail-after-a-bridge-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-a-destination-swap-can-fail-after-a-bridge-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-a-destination-swap-can-fail-after-a-bridge-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a destination swap can fail after a bridge",
+          "item": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/#webpage",
+      "url": "https://ethereumnews.github.io/why-a-destination-swap-can-fail-after-a-bridge/",
+      "name": "Destination swap reverts after bridging: what to do",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why a destination swap can fail after a bridge</h1>
+<p class="sb43b948">A failed destination swap can leave bridged tokens on the receiving chain; check both transaction records and the token balance before retrying or sending funds again.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-16T17:56:13+00:00">Oct 16, 2026 · 17:56 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/why-a-destination-swap-can-fail-after-a-bridge.jpg" alt="Why a destination swap can fail after a bridge">
+  </figure>
+  <div class="s55ebc20"><p>A destination swap can revert after a bridge delivers tokens because the receiving-chain trade is a separate step that can fail on its own. Check the bridge and swap records separately before retrying: the bridge may be complete even if the swap is not.</p>
+
+<p>Bridge status pages track whether assets reached the destination; a transaction explorer shows whether the swap call succeeded. For a fuller walkthrough of the stuck-transfer stages, see <a href="https://dailycryptonews.github.io/manta-bridge-or-bridge-then-swap-what-to-do-with-a-stuck-transfer/" rel="noopener">manta bridge</a>. The distinction matters because a failed swap does not automatically mean the bridged funds are lost.</p>
+
+<h2>What does a destination swap revert mean?</h2>
+
+<p>It means the destination-chain swap transaction failed and its on-chain changes were rolled back. Ethereum’s EIP-140 defines the EVM’s REVERT instruction this way; the earlier source-chain bridge transaction is separate, so its completion is not undone by a later swap failure.</p>
+
+<p>In many flows, the received asset remains in the wallet or contract that handled the destination step, in the token sent across rather than the token the user wanted to receive. The exact location and recovery path depend on the bridge or routing app, so check its status record and the destination address before taking action.</p>
+
+<h2>Why does a swap fail after bridging?</h2>
+
+<p>A route can fail if its available liquidity or price changes before execution, or if the trade cannot meet the minimum output set by the user or app. A destination call can also fail when it lacks the required token approval or gas. These are possible causes, not proof of what happened in a particular transfer; the transaction’s status or error details are the evidence to check.</p>
+
+<p>Start with the source transaction hash to confirm the bridge step, then use the destination hash or app status to check the swap. If the swap reverted, inspect the destination wallet’s token balances and the app’s recovery instructions before submitting anything else.</p>
+
+<ul>
+<li>Confirm the destination chain and receiving address.</li>
+<li>Check whether the destination swap has a successful or failed transaction receipt.</li>
+<li>Look for the bridged token in the wallet or contract identified by the app.</li>
+<li>Use the app’s documented recovery flow if the funds are held by its contract.</li>
+</ul>
+
+<h2>Should you retry the destination swap?</h2>
+
+<p>Retry only after confirming the token is available and the new transaction uses the correct asset, route, slippage limit and gas. A failed EVM transaction can still consume gas, according to Ethereum’s gas documentation, so repeating the same call without checking the cause can add cost without resolving the failure.</p>
+
+<p>The next step is to follow the bridge or app’s recovery instructions for the recorded destination status; if it offers a manual swap, review the token and output details before signing.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/track-a-crypto-transfer-at-both-wallets/">Track a Crypto Transfer at Both Wallets</a></li>
+      <li><a href="/how-to-send-native-crypto-without-a-token-approval/">How to Send Native Crypto Without a Token Approval</a></li>
+      <li><a href="/why-cross-chain-swaps-deduct-gas-from-your-payout/">Why Cross-Chain Swaps Deduct Gas From Your Payout</a></li>
+      <li><a href="/how-to-clear-a-pending-mantle-bridge-wallet-nonce/">How to Clear a Pending Mantle Bridge Wallet Nonce</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
