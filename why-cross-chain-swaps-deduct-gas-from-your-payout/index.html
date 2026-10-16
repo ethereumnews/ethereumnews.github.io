@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Fees: Why Gas Comes Out of the Amount</title>
+<meta name="description" content="Cross-chain swaps may subtract destination gas from the output because the service pays the receiving chain fee; check the net amount, fee basis and quote expiry.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Cross-Chain Swaps Deduct Gas From Your Payout">
+<meta property="og:description" content="Cross-chain swaps may subtract destination gas from the output because the service pays the receiving chain fee; check the net amount, fee basis and quote expiry.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-cross-chain-swaps-deduct-gas-from-your-payout-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Cross-Chain Swaps Deduct Gas From Your Payout"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Cross-Chain Swaps Deduct Gas From Your Payout">
+<meta name="twitter:description" content="Cross-chain swaps may subtract destination gas from the output because the service pays the receiving chain fee; check the net amount, fee basis and quote expiry.">
+<meta property="article:published_time" content="2026-10-16T12:31:15+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/#article",
+      "headline": "Why Cross-Chain Swaps Deduct Gas From Your Payout",
+      "isAccessibleForFree": true,
+      "description": "Cross-chain swaps may subtract destination gas from the output because the service pays the receiving chain fee; check the net amount, fee basis and quote expiry.",
+      "datePublished": "2026-10-16T12:31:15+00:00",
+      "dateModified": "2026-10-16T12:31:15+00:00",
+      "url": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 432,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-cross-chain-swaps-deduct-gas-from-your-payout-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-cross-chain-swaps-deduct-gas-from-your-payout-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-cross-chain-swaps-deduct-gas-from-your-payout-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Cross-Chain Swaps Deduct Gas From Your Payout",
+          "item": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/#webpage",
+      "url": "https://ethereumnews.github.io/why-cross-chain-swaps-deduct-gas-from-your-payout/",
+      "name": "Cross-Chain Swap Fees: Why Gas Comes Out of the Amount",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why Cross-Chain Swaps Deduct Gas From Your Payout</h1>
+<p class="sb43b948">Cross-chain swaps may subtract destination gas from the output because the service pays the receiving chain fee; check the net amount, fee basis and quote expiry.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-16T12:31:15+00:00">Oct 16, 2026 · 12:31 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/why-cross-chain-swaps-deduct-gas-from-your-payout.jpg" alt="Why Cross-Chain Swaps Deduct Gas From Your Payout">
+  </figure>
+  <div class="s55ebc20"><p>Cross-chain swap services often deduct destination-chain gas from the amount they send because they pay the receiving network to process the payout. The displayed output can therefore be lower than the value produced by the swap itself, with the difference covering delivery costs and other fees.</p>
+
+<p>That deduction is separate from the gas paid to send the original transaction, which is usually charged by the source chain wallet. For a closer look at how one integrated route handles these steps, <a href="https://splytgenesis.com/thor-swap-gives-integrators-one-cross-chain-flow/" rel="noopener">thor swap</a> covers the flow in more detail.</p>
+
+<h2>Which costs can reduce the amount you receive?</h2>
+
+<p>The received amount may reflect swap pricing, network fees and service charges. A swap can incur a liquidity or trading fee, while the payout transaction needs gas on the destination chain; some services also add an integrator fee. These costs are distinct, even when a quote groups them together.</p>
+
+<p>In some systems, the service pays gas in the destination chain’s native token and charges the user an equivalent outbound fee from the asset being delivered. Other services may require the user to hold native gas separately or deduct a different fee. The exact method depends on the route and provider.</p>
+
+<h2>Why does the fee vary between transactions?</h2>
+
+<p>Destination gas changes with network demand and the work required to process a transaction. A token transfer may cost more or less than a native-asset transfer, and the same payout can cost different amounts on different chains. Services may estimate the fee when they prepare a quote, so a later change in network conditions can affect the final payout or whether the transaction completes.</p>
+
+<p>Small transfers feel this cost more because a mostly fixed network fee takes a larger share of a small amount. Compare the net output with the amount you expect to receive, especially when choosing between routes with different destination chains.</p>
+
+<h2>What should you check before confirming?</h2>
+
+<p>Read the quote as a payout estimate, not just a swap price. Check the destination asset and network, the minimum received amount, and whether the quoted output already includes outbound gas and any service fee.</p>
+
+<ul>
+<li>Confirm the receiving address supports the selected network and asset.</li>
+<li>Check the quote’s expiry and minimum output before submitting.</li>
+<li>Keep enough source-chain gas to send the transaction.</li>
+<li>Check whether the recipient needs native gas for a later transfer.</li>
+</ul>
+
+<p>If the quote only shows a gross swap amount, look for a fee breakdown or net payout figure before proceeding. The amount that matters is the final minimum the route commits to deliver; network fees and quote terms can change, so review them again before confirming.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-to-clear-a-pending-mantle-bridge-wallet-nonce/">How to Clear a Pending Mantle Bridge Wallet Nonce</a></li>
+      <li><a href="/four-checks-to-make-on-a-pending-cross-chain-swap/">Four Checks to Make on a Pending Cross-Chain Swap</a></li>
+      <li><a href="/read-the-destination-amount-before-you-bridge/">Read the destination amount before you bridge</a></li>
+      <li><a href="/permit-signatures-can-remove-a-separate-token-approval/">Permit signatures can remove a separate token approval</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
