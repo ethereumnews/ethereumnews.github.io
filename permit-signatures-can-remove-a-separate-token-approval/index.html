@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permit signatures and token approval transactions | Web3 Hub</title>
+<meta name="description" content="Permit signatures move token approval into a wallet message, letting a swap contract use it in the same transaction when the token and route support permits.">
+<link rel="canonical" href="https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Permit signatures can remove a separate token approval">
+<meta property="og:description" content="Permit signatures move token approval into a wallet message, letting a swap contract use it in the same transaction when the token and route support permits.">
+<meta property="og:url" content="https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/permit-signatures-can-remove-a-separate-token-approval-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Permit signatures can remove a separate token approval"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Permit signatures can remove a separate token approval">
+<meta name="twitter:description" content="Permit signatures move token approval into a wallet message, letting a swap contract use it in the same transaction when the token and route support permits.">
+<meta property="article:published_time" content="2026-10-16T04:21:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/#article",
+      "headline": "Permit signatures can remove a separate token approval",
+      "isAccessibleForFree": true,
+      "description": "Permit signatures move token approval into a wallet message, letting a swap contract use it in the same transaction when the token and route support permits.",
+      "datePublished": "2026-10-16T04:21:20+00:00",
+      "dateModified": "2026-10-16T04:21:20+00:00",
+      "url": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 430,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/permit-signatures-can-remove-a-separate-token-approval-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/permit-signatures-can-remove-a-separate-token-approval-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/permit-signatures-can-remove-a-separate-token-approval-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Permit signatures can remove a separate token approval",
+          "item": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/#webpage",
+      "url": "https://ethereumnews.github.io/permit-signatures-can-remove-a-separate-token-approval/",
+      "name": "Permit signatures and token approval transactions | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Permit signatures can remove a separate token approval</h1>
+<p class="sb43b948">Permit signatures move token approval into a wallet message, letting a swap contract use it in the same transaction when the token and route support permits.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-16T04:21:20+00:00">Oct 16, 2026 · 04:21 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/permit-signatures-can-remove-a-separate-token-approval.jpg" alt="Permit signatures can remove a separate token approval">
+  </figure>
+  <div class="s55ebc20"><p>Permit signatures let a wallet authorize token spending off-chain, so a swap app can bundle that approval with the transaction that uses it. The wallet signs a message; a contract checks it when the swap is submitted, which can save a separate on-chain approval step.</p>
+
+<p>The signature does not move tokens by itself. The submitted transaction still runs on-chain and pays a network fee, and the flow depends on the token and app supporting the relevant permit method. For a separate walkthrough of the route, see <a href="https://cryptonews-week.com/how-to-make-your-first-cross-chain-swap-with-quickswap/" rel="noopener">Quickswap first cross-chain swap steps</a>.</p>
+
+<h2>How does a permit signature work?</h2>
+
+<p>A permit is a signed instruction that gives a specified contract permission to spend tokens under defined terms. With ERC-2612, a compatible token verifies the signature and updates its allowance when a contract calls its permit function; the app can include that call alongside the swap.</p>
+
+<p>The message commonly specifies the token, spender, amount, nonce and deadline. Those fields limit what the signature authorizes and prevent reuse: a nonce tracks which permits have been used, while an expired deadline makes an old signature invalid. EIP-712 typed data helps wallets display structured signing requests, but the wallet prompt still needs careful review.</p>
+
+<h2>Does signing always remove the approval transaction?</h2>
+
+<p>No. A token must support a permit method, and the app’s route must be built to use it. If either does not, the wallet may still need to send a standard approval transaction before the swap.</p>
+
+<p>Permit2 offers another pattern for supported integrations: the token is first approved to the Permit2 contract on-chain, then a user can sign a transfer authorization for a particular spend. That first approval remains a transaction; later signature-based transfers can avoid a new token approval each time. The gain is most useful after that setup, especially for repeated swaps.</p>
+
+<h2>What should users check before signing?</h2>
+
+<p>Read the wallet’s typed message and confirm which token, spender, amount and expiry it names. A signature is not a transaction, but it grants authority that a contract can use if the message is valid and unexpired.</p>
+
+<ul>
+<li>Check that the spender matches the app or router you intended to use.</li>
+<li>Prefer a specific amount and short expiry when the flow offers those choices.</li>
+<li>Reject a request whose token, chain or terms do not match the action on screen.</li>
+</ul>
+
+<p>For most users, a permit is a useful way to combine authorization and a swap when the wallet and route support it. The practical check is whether the transaction preview shows the swap using the signature; otherwise, expect a separate approval before the swap can proceed.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/cross-chain-payouts-trade-speed-for-simpler-treasury-settlement/">Cross-chain payouts trade speed for simpler treasury settlement</a></li>
+      <li><a href="/what-happens-when-you-bridge-crypto-to-another-chain/">What Happens When You Bridge Crypto to Another Chain?</a></li>
+      <li><a href="/bridge-stablecoins-before-paying-a-cross-chain-invoice/">Bridge Stablecoins Before Paying a Cross-Chain Invoice</a></li>
+      <li><a href="/keep-gas-on-both-chains-before-your-first-cross-chain-swap/">Keep Gas on Both Chains Before Your First Cross-Chain Swap</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
