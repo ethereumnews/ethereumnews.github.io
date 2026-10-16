@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send Native Coins Without Token Approval | Web3 Hub</title>
+<meta name="description" content="Native coins move in a signed transaction, while token approvals let contracts spend ERC-20 balances; the distinction changes the steps and permissions on-chain.">
+<link rel="canonical" href="https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Send Native Crypto Without a Token Approval">
+<meta property="og:description" content="Native coins move in a signed transaction, while token approvals let contracts spend ERC-20 balances; the distinction changes the steps and permissions on-chain.">
+<meta property="og:url" content="https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/how-to-send-native-crypto-without-a-token-approval-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Send Native Crypto Without a Token Approval"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Send Native Crypto Without a Token Approval">
+<meta name="twitter:description" content="Native coins move in a signed transaction, while token approvals let contracts spend ERC-20 balances; the distinction changes the steps and permissions on-chain.">
+<meta property="article:published_time" content="2026-10-16T14:15:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/#article",
+      "headline": "How to Send Native Crypto Without a Token Approval",
+      "isAccessibleForFree": true,
+      "description": "Native coins move in a signed transaction, while token approvals let contracts spend ERC-20 balances; the distinction changes the steps and permissions on-chain.",
+      "datePublished": "2026-10-16T14:15:51+00:00",
+      "dateModified": "2026-10-16T14:15:51+00:00",
+      "url": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 384,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-send-native-crypto-without-a-token-approval-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-send-native-crypto-without-a-token-approval-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-send-native-crypto-without-a-token-approval-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Send Native Crypto Without a Token Approval",
+          "item": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/#webpage",
+      "url": "https://ethereumnews.github.io/how-to-send-native-crypto-without-a-token-approval/",
+      "name": "Send Native Coins Without Token Approval | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">How to Send Native Crypto Without a Token Approval</h1>
+<p class="sb43b948">Native coins move in a signed transaction, while token approvals let contracts spend ERC-20 balances; the distinction changes the steps and permissions on-chain.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-16T14:15:51+00:00">Oct 16, 2026 · 14:15 UTC</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/how-to-send-native-crypto-without-a-token-approval.jpg" alt="How to Send Native Crypto Without a Token Approval">
+  </figure>
+  <div class="s55ebc20"><p>Send a blockchain’s native coin by signing a transaction that transfers it directly from your wallet; no token approval is needed. The transaction authorizes the transfer itself, rather than granting a contract permission to spend a balance later.</p>
+
+<h2>Why doesn’t a native coin need approval?</h2>
+
+<p>On Ethereum, a native ETH transfer names a recipient and an amount, and the wallet signs the transaction and pays its network fee in ETH. The chain updates the sender’s and recipient’s balances when it processes that transaction. For a cross-chain swap, a <a href="https://tareom.com/how-a-thor-swap-moves-crypto-across-blockchains/" rel="noopener">thor swap</a> sends the source-chain asset to a protocol address, which is a different operation from approving a token contract.</p>
+
+<p>An ERC-20 token is recorded by a smart contract, not as the chain’s native balance. If an app needs to pull tokens from your wallet with <code>transferFrom</code>, the token contract first checks whether you have approved that spender and amount. A direct token transfer to another address can use the token contract’s <code>transfer</code> function without granting that separate allowance.</p>
+
+<h2>How do I send a native coin?</h2>
+
+<p>Choose the asset on its own network, enter the recipient address, set the amount, and review the transaction in your wallet before signing. Keep enough of the same network’s native coin to cover the fee: sending ETH requires ETH for gas, while a token approval is a separate transaction that also costs gas.</p>
+
+<p>Before signing, check:</p>
+
+<ul>
+<li>The selected network matches the recipient’s address and instructions.</li>
+<li>The asset is native to that network, rather than a token with a similar name.</li>
+<li>The recipient address and amount are correct.</li>
+<li>The wallet shows a transfer of value, not an unexpected contract permission.</li>
+</ul>
+
+<h2>When will a token approval still appear?</h2>
+
+<p>An app may ask for approval when you swap or deposit an ERC-20 token, because its contract needs permission to move that token. That allowance can be limited to the amount needed; a larger or unlimited allowance gives the spender more room to move tokens, so check the spender and amount shown by the wallet.</p>
+
+<p>Native-coin transfers avoid this allowance step, but they still require a valid address, the right network, and a fee balance. If the transaction is for a swap, review the quoted output and destination before signing; the next step is the on-chain transaction, which may take time to confirm.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/why-cross-chain-swaps-deduct-gas-from-your-payout/">Why Cross-Chain Swaps Deduct Gas From Your Payout</a></li>
+      <li><a href="/how-to-clear-a-pending-mantle-bridge-wallet-nonce/">How to Clear a Pending Mantle Bridge Wallet Nonce</a></li>
+      <li><a href="/four-checks-to-make-on-a-pending-cross-chain-swap/">Four Checks to Make on a Pending Cross-Chain Swap</a></li>
+      <li><a href="/read-the-destination-amount-before-you-bridge/">Read the destination amount before you bridge</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
