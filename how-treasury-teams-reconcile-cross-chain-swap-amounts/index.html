@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Reconciliation for Treasury Teams</title>
+<meta name="description" content="Treasury teams should match each swap’s source debit to its destination credit, isolate chain and protocol fees, and preserve a transaction trail for valuation and audit.">
+<link rel="canonical" href="https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Treasury Teams Reconcile Cross-Chain Swap Amounts">
+<meta property="og:description" content="Treasury teams should match each swap’s source debit to its destination credit, isolate chain and protocol fees, and preserve a transaction trail for valuation and audit.">
+<meta property="og:url" content="https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/how-treasury-teams-reconcile-cross-chain-swap-amounts-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Treasury Teams Reconcile Cross-Chain Swap Amounts"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Treasury Teams Reconcile Cross-Chain Swap Amounts">
+<meta name="twitter:description" content="Treasury teams should match each swap’s source debit to its destination credit, isolate chain and protocol fees, and preserve a transaction trail for valuation and audit.">
+<meta property="article:published_time" content="2026-10-17T03:03:21+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/#article",
+      "headline": "How Treasury Teams Reconcile Cross-Chain Swap Amounts",
+      "isAccessibleForFree": true,
+      "description": "Treasury teams should match each swap’s source debit to its destination credit, isolate chain and protocol fees, and preserve a transaction trail for valuation and audit.",
+      "datePublished": "2026-10-17T03:03:21+00:00",
+      "dateModified": "2026-10-17T03:03:21+00:00",
+      "url": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 424,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-treasury-teams-reconcile-cross-chain-swap-amounts-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-treasury-teams-reconcile-cross-chain-swap-amounts-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-treasury-teams-reconcile-cross-chain-swap-amounts-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Treasury Teams Reconcile Cross-Chain Swap Amounts",
+          "item": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/#webpage",
+      "url": "https://ethereumnews.github.io/how-treasury-teams-reconcile-cross-chain-swap-amounts/",
+      "name": "Cross-Chain Swap Reconciliation for Treasury Teams",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">How Treasury Teams Reconcile Cross-Chain Swap Amounts</h1>
+<p class="sb43b948">Treasury teams should match each swap’s source debit to its destination credit, isolate chain and protocol fees, and preserve a transaction trail for valuation and audit.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-17T03:03:21+00:00">Oct 17, 2026 · 03:03 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/how-treasury-teams-reconcile-cross-chain-swap-amounts.jpg" alt="How Treasury Teams Reconcile Cross-Chain Swap Amounts">
+  </figure>
+  <div class="s55ebc20"><p>Treasury teams reconcile a cross-chain swap by matching the source-chain debit to the destination-chain receipt, then recording fees and settlement value separately. The key is to preserve evidence for each leg: a single swap request can produce transactions on two chains and an internal protocol route.</p>
+
+<p>THORChain’s documentation describes a BTC-to-ETH swap as one user-facing flow, with BTC sent in and ETH sent out while the conversion runs through RUNE internally. For a fuller account of that flow, see <a href="https://chainpulse-abh.pages.dev/thor-swap-puts-btc-to-eth-conversion-in-one-cross-chain-flow/" rel="noopener">thor swap</a>. The treasury ledger should still tie the incoming and outgoing transactions to the same swap record.</p>
+
+<h2>What records should treasury match?</h2>
+
+<p>Match the approved swap instruction to the source debit and destination credit using transaction identifiers, wallet addresses, asset, amount and timestamps. Record the amount actually sent and received, rather than relying on a quote or interface estimate.</p>
+
+<ul>
+<li>Swap request or trade reference, including the intended asset pair and recipient address.</li>
+<li>Source-chain transaction ID, gross amount sent and source network fee.</li>
+<li>Destination-chain transaction ID, net amount received and outbound fee, if shown separately.</li>
+<li>Protocol execution details, status and timestamps for initiation, confirmation and completion.</li>
+</ul>
+
+<p>Keep the original chain units alongside any converted reporting amount. Bitcoin and Ethereum use different units and transaction identifiers; matching by amount alone can produce false matches, especially when several swaps are pending.</p>
+
+<h2>Why can the received amount differ from the quote?</h2>
+
+<p>The received amount can differ because network fees and swap costs affect different points in the flow. THORChain’s fee documentation separates the source-chain transaction fee from liquidity and outbound fees; it says liquidity and outbound fees are deducted during execution or from the output.</p>
+
+<p>Reconcile those components to the final receipt rather than treating the difference as one unexplained variance. If the protocol reports an incomplete swap or refund, record the refund as a separate movement and keep the original instruction linked to it. Do not close the item as settled until the destination receipt or refund is confirmed on-chain.</p>
+
+<h2>How should treasury value and close the swap?</h2>
+
+<p>Apply the organization’s existing valuation policy at the recorded execution or settlement time, and retain the price source and timestamp used. That creates an auditable reporting value without confusing it with the token quantity delivered.</p>
+
+<p>Close the reconciliation when the source debit, destination receipt and documented fees balance under that policy. Escalate unmatched transactions, unexpected recipient addresses or amounts outside the approved tolerance for review; retain the evidence with the ledger entry. The next close should carry forward only unresolved items, with their transaction IDs and current status.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/lower-gas-or-more-output-compare-the-net-value/">Lower Gas or More Output? Compare the Net Value</a></li>
+      <li><a href="/token-contract-replacements-need-a-plan-for-every-chain/">Token Contract Replacements Need a Plan for Every Chain</a></li>
+      <li><a href="/why-cross-chain-swaps-split-across-pools/">Why Cross-Chain Swaps Split Across Pools</a></li>
+      <li><a href="/five-steps-to-buy-fractional-nft-shares-on-mantle/">Five Steps to Buy Fractional NFT Shares on Mantle</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
