@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge source confirmations: three checks before you proceed</title>
+<meta name="description" content="A source-chain transaction marked successful does not prove a bridge transfer is complete; check the network, transaction details and destination status before acting.">
+<link rel="canonical" href="https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Three checks to make before a bridge transfer is complete">
+<meta property="og:description" content="A source-chain transaction marked successful does not prove a bridge transfer is complete; check the network, transaction details and destination status before acting.">
+<meta property="og:url" content="https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/three-checks-to-make-before-a-bridge-transfer-is-complete-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three checks to make before a bridge transfer is complete"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Three checks to make before a bridge transfer is complete">
+<meta name="twitter:description" content="A source-chain transaction marked successful does not prove a bridge transfer is complete; check the network, transaction details and destination status before acting.">
+<meta property="article:published_time" content="2026-10-22T18:44:08+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/#article",
+      "headline": "Three checks to make before a bridge transfer is complete",
+      "isAccessibleForFree": true,
+      "description": "A source-chain transaction marked successful does not prove a bridge transfer is complete; check the network, transaction details and destination status before acting.",
+      "datePublished": "2026-10-22T18:44:08+00:00",
+      "dateModified": "2026-10-22T18:44:08+00:00",
+      "url": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 421,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/three-checks-to-make-before-a-bridge-transfer-is-complete-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/three-checks-to-make-before-a-bridge-transfer-is-complete-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/three-checks-to-make-before-a-bridge-transfer-is-complete-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Three checks to make before a bridge transfer is complete",
+          "item": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/#webpage",
+      "url": "https://ethereumnews.github.io/three-checks-to-make-before-a-bridge-transfer-is-complete/",
+      "name": "Bridge source confirmations: three checks before you proceed",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Three checks to make before a bridge transfer is complete</h1>
+<p class="sb43b948">A source-chain transaction marked successful does not prove a bridge transfer is complete; check the network, transaction details and destination status before acting.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-22T18:44:08+00:00">Oct 22, 2026 · 18:44 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/three-checks-to-make-before-a-bridge-transfer-is-complete.jpg" alt="Three checks to make before a bridge transfer is complete">
+  </figure>
+  <div class="s55ebc20"><p>A bridge transfer is not complete just because its source-chain transaction is marked successful; check the network, transaction details and destination status before treating the funds as available. The source transaction starts the process, while bridge contracts and network messaging handle what happens next.</p>
+
+<h2>Is the transaction on the right source chain?</h2>
+
+<p>Confirm that the transaction hash belongs to the network you intended to send from. A wallet can switch networks without making the destination obvious, and a transaction on the wrong chain will not trigger the transfer you expect.</p>
+
+<p>Open the hash in that chain’s block explorer and compare the sender, recipient contract, token and amount with the details shown in your wallet. For an ETH transfer from Ethereum to Polygon PoS, the <a href="https://aboutcryptotalks.gitbook.io/aboutcrypto/how-do-i-use-polygon-bridge-to-move-eth-to-polygon-pos" rel="noopener">guide to moving ETH through Polygon Bridge</a> covers the steps in more detail. A successful status only confirms that the source-chain transaction was accepted; it does not, by itself, confirm delivery on Polygon.</p>
+
+<h2>Does the source transaction have the required confirmations?</h2>
+
+<p>Check the explorer’s confirmation or finality status before relying on a transfer that is still pending. A pending transaction has not been included in a block; a confirmed transaction has been included, but the bridge may still need to process it.</p>
+
+<p>There is no single confirmation count that applies to every bridge. The bridge’s status page or instructions determine when it considers the source transaction ready, and network congestion can affect how long that takes. If the transaction is pending, wait for it to settle before retrying, so you do not accidentally submit a second transfer.</p>
+
+<h2>Has the bridge credited the destination chain?</h2>
+
+<p>Check the bridge’s transfer record and the destination chain before assuming the asset has arrived. For an Ethereum-to-Polygon PoS deposit, the source transaction locks the asset on Ethereum; a corresponding amount is then made available on Polygon through the bridge’s deposit process.</p>
+
+<ul>
+<li>Match the source transaction hash and transfer amount.</li>
+<li>Confirm the destination network and recipient address.</li>
+<li>Check the destination wallet or explorer for the received asset.</li>
+<li>Read the bridge status if the source is confirmed but the destination is pending.</li>
+</ul>
+
+<p>A confirmed source transaction and a completed bridge transfer are separate milestones. For withdrawals from Polygon PoS to Ethereum, the bridge uses a different process: Polygon’s support documentation says the asset is burned on Polygon and unlocked on Ethereum, and a checkpoint is required before the final claim. Check the bridge’s current status for the next step; treat the transfer as complete only when the destination balance or transaction record confirms receipt.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/occ-leaves-crypto-exchanges-room-to-offer-stablecoin-rewards/">OCC leaves crypto exchanges room to offer stablecoin rewards</a></li>
+      <li><a href="/why-polygon-pos-withdrawals-take-two-steps/">Why Polygon PoS withdrawals take two steps</a></li>
+      <li><a href="/how-a-tron-swap-works-from-your-own-wallet/">How a tron swap works from your own wallet</a></li>
+      <li><a href="/visa-and-mesh-link-crypto-wallets-to-175-million-merchants/">Visa and Mesh link crypto wallets to 175 million merchants</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
