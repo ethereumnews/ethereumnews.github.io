@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon Bridge withdrawals: why they take two steps</title>
+<meta name="description" content="Polygon PoS withdrawals split the burn and Ethereum release so validators can checkpoint the Polygon block and the bridge can verify a proof before paying out.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Polygon PoS withdrawals take two steps">
+<meta property="og:description" content="Polygon PoS withdrawals split the burn and Ethereum release so validators can checkpoint the Polygon block and the bridge can verify a proof before paying out.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-polygon-pos-withdrawals-take-two-steps-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Polygon PoS withdrawals take two steps"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Polygon PoS withdrawals take two steps">
+<meta name="twitter:description" content="Polygon PoS withdrawals split the burn and Ethereum release so validators can checkpoint the Polygon block and the bridge can verify a proof before paying out.">
+<meta property="article:published_time" content="2026-10-22T06:29:00+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/#article",
+      "headline": "Why Polygon PoS withdrawals take two steps",
+      "isAccessibleForFree": true,
+      "description": "Polygon PoS withdrawals split the burn and Ethereum release so validators can checkpoint the Polygon block and the bridge can verify a proof before paying out.",
+      "datePublished": "2026-10-22T06:29:00+00:00",
+      "dateModified": "2026-10-22T06:29:00+00:00",
+      "url": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 343,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-polygon-pos-withdrawals-take-two-steps-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-polygon-pos-withdrawals-take-two-steps-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-polygon-pos-withdrawals-take-two-steps-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Polygon PoS withdrawals take two steps",
+          "item": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/#webpage",
+      "url": "https://ethereumnews.github.io/why-polygon-pos-withdrawals-take-two-steps/",
+      "name": "Polygon Bridge withdrawals: why they take two steps",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why Polygon PoS withdrawals take two steps</h1>
+<p class="sb43b948">Polygon PoS withdrawals split the burn and Ethereum release so validators can checkpoint the Polygon block and the bridge can verify a proof before paying out.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-10-22T06:29:00+00:00">Oct 22, 2026 · 06:29 UTC</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/why-polygon-pos-withdrawals-take-two-steps.jpg" alt="Why Polygon PoS withdrawals take two steps">
+  </figure>
+  <div class="s55ebc20"><p>Polygon PoS withdrawals take two steps because the bridge must record a token burn on Polygon, then verify that burn before releasing the matching asset on Ethereum. The separation lets Ethereum contracts check a proof of the Polygon transaction before paying out.</p>
+
+<h2>Why can’t the bridge release tokens in one transaction?</h2>
+<p>Polygon and Ethereum keep separate records of balances, so an Ethereum contract cannot treat a Polygon transaction as proof by itself. The Polygon PoS bridge burns the bridged tokens on Polygon, then relies on a checkpoint that commits Polygon block data to Ethereum.</p>
+<p>The checkpoint is a validator-submitted commitment to a range of Polygon blocks. The bridge uses it to verify that the withdrawal burn is included in the recorded chain history. A <a href="https://graph.org/PoS-or-Plasma-Which-Polygon-Bridge-Route-Fits-Your-Token-10-21" rel="noopener">comparison of Polygon Bridge routes</a> explains how the PoS path differs from Plasma; the two routes have different withdrawal mechanics.</p>
+
+<h2>What happens in each withdrawal step?</h2>
+<p>First, the user submits a withdrawal on Polygon. For a bridged token, that transaction burns the Polygon-side representation and produces the record needed to claim the original asset on Ethereum.</p>
+<p>Then the withdrawal waits until the block containing that burn is covered by a checkpoint. Once it is, the user submits an exit transaction on Ethereum with a cryptographic proof of the burn’s inclusion. The Ethereum bridge contract checks the proof and releases the matching tokens to the claim address.</p>
+<ul>
+<li><strong>Burn:</strong> the Polygon-side tokens are destroyed.</li>
+<li><strong>Checkpoint:</strong> validators commit Polygon block data to Ethereum.</li>
+<li><strong>Exit:</strong> an Ethereum transaction proves the burn and claims the released asset.</li>
+</ul>
+
+<h2>What should users expect while waiting?</h2>
+<p>The first transaction starts the withdrawal; it does not complete the transfer to Ethereum. The checkpoint delay is separate from the time needed to submit and confirm the final Ethereum transaction, which also requires Ethereum gas.</p>
+<p>Keep the burn transaction hash so you can find the withdrawal and continue once its block is checkpointed. The next step is to submit the exit on Ethereum; the transfer is complete after that transaction succeeds and the released asset appears at the claim address.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-a-tron-swap-works-from-your-own-wallet/">How a tron swap works from your own wallet</a></li>
+      <li><a href="/visa-and-mesh-link-crypto-wallets-to-175-million-merchants/">Visa and Mesh link crypto wallets to 175 million merchants</a></li>
+      <li><a href="/byreal-in-6-steps-swap-add-liquidity-and-trade-markets/">Byreal in 6 Steps: Swap, Add Liquidity and Trade Markets</a></li>
+      <li><a href="/jpmorgan-brings-jpm-coin-to-ethereum-for-institutions/">JPMorgan Brings JPM Coin to Ethereum for Institutions</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
