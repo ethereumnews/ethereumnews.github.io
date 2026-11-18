@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitcoin bridge checklist: five checks before release</title>
+<meta name="description" content="A bitcoin bridge integration checklist for wallet developers: validate each request, sign the bridge-built transaction, resolve tokens by chain, and track failures by txid.">
+<link rel="canonical" href="https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Bitcoin bridge integration checklist: checks before launch">
+<meta property="og:description" content="A bitcoin bridge integration checklist for wallet developers: validate each request, sign the bridge-built transaction, resolve tokens by chain, and track failures by txid.">
+<meta property="og:url" content="https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/bitcoin-bridge-integration-checklist-checks-before-launch-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bitcoin bridge integration checklist: checks before launch"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bitcoin bridge integration checklist: checks before launch">
+<meta name="twitter:description" content="A bitcoin bridge integration checklist for wallet developers: validate each request, sign the bridge-built transaction, resolve tokens by chain, and track failures by txid.">
+<meta property="article:published_time" content="2026-11-18T16:28:10+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/#article",
+      "headline": "Bitcoin bridge integration checklist: checks before launch",
+      "isAccessibleForFree": true,
+      "description": "A bitcoin bridge integration checklist for wallet developers: validate each request, sign the bridge-built transaction, resolve tokens by chain, and track failures by txid.",
+      "datePublished": "2026-11-18T16:28:10+00:00",
+      "dateModified": "2026-11-18T16:28:10+00:00",
+      "url": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 418,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/bitcoin-bridge-integration-checklist-checks-before-launch-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/bitcoin-bridge-integration-checklist-checks-before-launch-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/bitcoin-bridge-integration-checklist-checks-before-launch-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bitcoin bridge integration checklist: checks before launch",
+          "item": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/#webpage",
+      "url": "https://ethereumnews.github.io/bitcoin-bridge-integration-checklist-checks-before-launch/",
+      "name": "Bitcoin bridge checklist: five checks before release",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Bitcoin bridge integration checklist: checks before launch</h1>
+<p class="sb43b948">A bitcoin bridge integration checklist for wallet developers: validate each request, sign the bridge-built transaction, resolve tokens by chain, and track failures by txid.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-18T16:28:10+00:00">Nov 18, 2026 · 16:28 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/bitcoin-bridge-integration-checklist-checks-before-launch.jpg" alt="Bitcoin bridge integration checklist: checks before launch">
+  </figure>
+  <div class="s55ebc20"><p>Wallet developers should validate each bridge request, sign the exact Bitcoin transaction the bridge builds, resolve destination tokens per chain, and track every outcome by Bitcoin txid. Run this checklist against the release build before exposing a bridge flow to users.</p>
+<ul>
+<li><strong>Input validation.</strong> Validate the amount against the bridge minimum, confirm the destination chain, and check the receiving EVM address before building a Bitcoin transaction. Each request needs its own valid destination and amount; otherwise a correctly signed deposit may not fulfill the intended request.</li>
+<li><strong>Transaction signing.</strong> Confirm the wallet can sign the app-built PSBT without changing its outputs, including the OP_RETURN output carrying request data. Test every Bitcoin address type the app offers: P2PKH (1...), P2SH (3...), native SegWit (bc1q...) and Taproot (bc1p...). A signer that drops or alters required transaction data can leave the deposit unmatched.</li>
+<li><strong>Destination token handling.</strong> Fetch the destination token contract for the selected chain; teleBTC has a separate contract on each network. After the user reaches that chain, add the correct token to their token list so the received asset is visible.</li>
+<li><strong>Status tracking by txid.</strong> Store the Bitcoin txid against the bridge request and use it to follow confirmation and settlement status. TeleSwap verifies deposits on-chain with SPV proofs checked against a relay of Bitcoin block headers, so the app should keep the deposit tied to the request while that verification completes.</li>
+<li><strong>Failure states.</strong> Give the user a clear outcome for rejected signing, invalid inputs, a deposit that does not match a live request, and a request that has not reached settlement. Preserve the txid and request details so the user can see which deposit needs attention instead of submitting a duplicate.</li>
+</ul>
+<p>Read Locker deposit addresses and fees from the bridge contracts when the user creates a request. Lockers can change, and a deposit sent to a stale address is not processed as a request. A hardcoded address can therefore turn a valid Bitcoin payment into funds that the app cannot associate with the intended flow.</p>
+<p>For TeleSwap, <a href="https://paragraph.com/@defi-news/how-to-use-teleswap-to-bridge-btc-to-an-evm-chain-and-back" rel="noopener">teleswap liquidity</a> adds useful background on the liquidity behind the bridge. Use live contract data for the request itself, then verify that the address and fee shown to the user still correspond to that request before signing.</p>
+<p>Before release, run each supported address type through the full path: request creation, signing, broadcast, txid tracking and destination token visibility. The flow is ready when each request has a current Locker address, an intact signed transaction and a visible outcome tied to its Bitcoin txid.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-to-move-native-usdc-between-chains-with-cctp/">How to Move Native USDC Between Chains With CCTP</a></li>
+      <li><a href="/us-gets-court-approval-to-seize-1-2b-in-binance-crypto/">US gets court approval to seize $1.2B in Binance crypto</a></li>
+      <li><a href="/what-happens-after-approving-a-gnosis-bridge-withdrawal/">What happens after approving a Gnosis Bridge withdrawal?</a></li>
+      <li><a href="/bridged-tokens-in-metamask-ethereum-side-import/">Bridged tokens in MetaMask: Ethereum-side import</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
