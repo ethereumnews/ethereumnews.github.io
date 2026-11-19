@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check wallet chain ID: block wrong-chain swaps</title>
+<meta name="description" content="How to check a wallet chain ID before a token swap: call eth_chainId on the selected provider, compare it with your target, and block requests until they match.">
+<link rel="canonical" href="https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Check wallet chain ID before a swap to block wrong-chain requests">
+<meta property="og:description" content="How to check a wallet chain ID before a token swap: call eth_chainId on the selected provider, compare it with your target, and block requests until they match.">
+<meta property="og:url" content="https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Check wallet chain ID before a swap to block wrong-chain requests"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check wallet chain ID before a swap to block wrong-chain requests">
+<meta name="twitter:description" content="How to check a wallet chain ID before a token swap: call eth_chainId on the selected provider, compare it with your target, and block requests until they match.">
+<meta property="article:published_time" content="2026-11-19T01:45:49+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/#article",
+      "headline": "Check wallet chain ID before a swap to block wrong-chain requests",
+      "isAccessibleForFree": true,
+      "description": "How to check a wallet chain ID before a token swap: call eth_chainId on the selected provider, compare it with your target, and block requests until they match.",
+      "datePublished": "2026-11-19T01:45:49+00:00",
+      "dateModified": "2026-11-19T01:45:49+00:00",
+      "url": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 345,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Check wallet chain ID before a swap to block wrong-chain requests",
+          "item": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/#webpage",
+      "url": "https://ethereumnews.github.io/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests/",
+      "name": "How to check wallet chain ID: block wrong-chain swaps",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Check wallet chain ID before a swap to block wrong-chain requests</h1>
+<p class="sb43b948">How to check a wallet chain ID before a token swap: call eth_chainId on the selected provider, compare it with your target, and block requests until they match.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-19T01:45:49+00:00">Nov 19, 2026 · 01:45 UTC</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/check-wallet-chain-id-before-a-swap-to-block-wrong-chain-requests.jpg" alt="Check wallet chain ID before a swap to block wrong-chain requests">
+  </figure>
+  <div class="s55ebc20"><p>Call <em>eth_chainId</em> on the selected EIP-1193 wallet provider and compare its normalized value with the intended chain ID before requesting a swap; application configuration can differ from wallet state.</p>
+<p>CoW Swap is a decentralized exchange interface that uses signed trade intents and solver-run batch auctions. When preparing a trade there, <a href="https://aboutcrypto24.mataroa.blog/blog/how-to-take-crypto-profits-in-stablecoins-from-a-wallet/" rel="noopener">cowswap fees</a> are another detail to consider alongside the chain used for the quote and signature.</p>
+<p>Have the provider selected by the user and a trusted chain configuration ready. Store the target chain ID as a value you can validate; Ethereum mainnet’s ID is 1, represented as <em>0x1</em>.</p>
+<h2>Validate the wallet chain before the request</h2>
+<ol>
+<li><strong>Read the selected provider.</strong> Call <em>await provider.request({method: 'eth_chainId'})</em> on the same EIP-1193 provider that will handle the wallet request. The result should be a hexadecimal string. A backend RPC call identifies that RPC endpoint’s chain, so it cannot establish which chain the user’s wallet provider is using.</li>
+<li><strong>Validate and compare the IDs.</strong> Reject a response that is not a hexadecimal chain ID, then convert the returned value and trusted target to <em>BigInt</em> and compare them numerically. For example, <em>0x1</em> and <em>0x01</em> represent the same numeric ID. A matching comparison lets the interface show the selected network as ready; a mismatch keeps the swap request blocked.</li>
+<li><strong>Resolve a mismatch, then read again.</strong> Offer a network switch only after a user action, using <em>wallet_switchEthereumChain</em> with the configured target. The wallet can reject the request or report that the chain is unsupported; show that outcome and keep the request blocked. After a successful switch, call <em>eth_chainId</em> again and compare the new result rather than assuming the switch took effect.</li>
+<li><strong>Revalidate before signing.</strong> In a CoW Swap integration, keep the wallet chain, quote endpoint and signing domain aligned. Handle EIP-1193’s <em>chainChanged</em> event by invalidating pending quote or signing preparation and rereading the provider’s chain ID. Read and compare once more immediately before issuing the signing request. The task is done when matching IDs enable the request and the interface shows the matching network; malformed output, provider failure or a mismatch leaves it blocked.</li>
+</ol></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/us-gets-authority-to-seize-1-2b-in-binance-crypto/">US Gets Authority to Seize $1.2B in Binance Crypto</a></li>
+      <li><a href="/what-happens-to-eth-when-a-bridge-locks-it/">What Happens to ETH When a Bridge Locks It</a></li>
+      <li><a href="/bitcoin-bridge-integration-checklist-checks-before-launch/">Bitcoin bridge integration checklist: checks before launch</a></li>
+      <li><a href="/how-to-move-native-usdc-between-chains-with-cctp/">How to Move Native USDC Between Chains With CCTP</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
