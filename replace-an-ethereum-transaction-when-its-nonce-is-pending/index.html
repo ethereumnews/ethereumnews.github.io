@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to replace pending Ethereum transaction with same nonce</title>
+<meta name="description" content="To replace a pending Ethereum transaction with the same nonce, sign a new transaction from the same account with higher fees, then see which transaction gets a receipt.">
+<link rel="canonical" href="https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Replace an Ethereum Transaction When Its Nonce Is Pending">
+<meta property="og:description" content="To replace a pending Ethereum transaction with the same nonce, sign a new transaction from the same account with higher fees, then see which transaction gets a receipt.">
+<meta property="og:url" content="https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/replace-an-ethereum-transaction-when-its-nonce-is-pending-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Replace an Ethereum Transaction When Its Nonce Is Pending"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace an Ethereum Transaction When Its Nonce Is Pending">
+<meta name="twitter:description" content="To replace a pending Ethereum transaction with the same nonce, sign a new transaction from the same account with higher fees, then see which transaction gets a receipt.">
+<meta property="article:published_time" content="2026-11-21T03:19:49+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/#article",
+      "headline": "Replace an Ethereum Transaction When Its Nonce Is Pending",
+      "isAccessibleForFree": true,
+      "description": "To replace a pending Ethereum transaction with the same nonce, sign a new transaction from the same account with higher fees, then see which transaction gets a receipt.",
+      "datePublished": "2026-11-21T03:19:49+00:00",
+      "dateModified": "2026-11-21T03:19:49+00:00",
+      "url": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 446,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/replace-an-ethereum-transaction-when-its-nonce-is-pending-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/replace-an-ethereum-transaction-when-its-nonce-is-pending-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/replace-an-ethereum-transaction-when-its-nonce-is-pending-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Replace an Ethereum Transaction When Its Nonce Is Pending",
+          "item": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/#webpage",
+      "url": "https://ethereumnews.github.io/replace-an-ethereum-transaction-when-its-nonce-is-pending/",
+      "name": "How to replace pending Ethereum transaction with same nonce",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Replace an Ethereum Transaction When Its Nonce Is Pending</h1>
+<p class="sb43b948">To replace a pending Ethereum transaction with the same nonce, sign a new transaction from the same account with higher fees, then see which transaction gets a receipt.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-21T03:19:49+00:00">Nov 21, 2026 · 03:19 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/replace-an-ethereum-transaction-when-its-nonce-is-pending.jpg" alt="Replace an Ethereum Transaction When Its Nonce Is Pending">
+  </figure>
+  <div class="s55ebc20"><p>Open the pending transaction’s details in the sending wallet; its sender account and nonce are the starting point. Create and sign a new transaction from that same account with the same nonce, and set fees high enough for the wallet or RPC provider to accept it as a replacement. Submit it through the original route, then check the transaction status and receipt to see which version was included. A hash proves the transaction was signed; it does not prove a node accepted it.</p>
+<h2>The sender and nonce decide whether a transaction is a replacement</h2>
+<p>Ethereum processes each account’s transactions in nonce order, and a nonce marks a transaction’s position in that account’s sequence. A new transaction competes with the original only when it comes from the same account and uses the same nonce; changing either means it is a separate transaction.</p>
+<p>For EIP-1559 transactions, both the max fee and priority fee affect whether a wallet or RPC provider accepts the replacement. Their fee bump rules vary, so there is no universal percentage to use. Raise the fees enough to meet the policy of the route you are submitting through.</p>
+<p>With Flashbots Protect, check the submission route’s status as well as public explorers, because private RPC submissions may not appear in the same places as public submissions. For <a href="https://ethereumnews.github.io/how-to-fix-an-ethereum-transaction-pending-for-hours-safely/">Flashbots pending transaction delays</a>, the route used to submit the transaction is also relevant to checking what happened.</p>
+<h2>Nonce 12 can replace an action or cancel it</h2>
+<p>Say nonce 12 is pending because a token transfer has not been included. To replace it with a different action, create that transaction from the same account, set its nonce to 12, and raise its fees to meet the wallet or RPC policy.</p>
+<p>To cancel it, submit a zero-value transfer to yourself from the same account, also using nonce 12 and higher fees. This cancellation competes with the original just like any other replacement; it takes effect only if accepted and mined before the original.</p>
+<p>After submitting, look up the replacement hash and the original hash on the relevant route or explorer. A hash can be calculated from signed transaction data before any node accepts the submission, so seeing one alone is not proof that the transaction is pending. An accepted submission can still lose the race: the original may be mined first, or the replacement may be included instead.</p>
+<p>The receipt shows which transaction was included. If one receives a receipt, that transaction used nonce 12; the other cannot also be included on the same canonical chain. The same-nonce rule is what lets you retry or cancel, while the route’s fee policy and which transaction gets mined determine the outcome.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/monad-token-contract-addresses-how-to-verify-them/">Monad token contract addresses: how to verify them</a></li>
+      <li><a href="/how-to-choose-a-reliable-rpc-provider-for-your-workload/">How to choose a reliable RPC provider for your workload</a></li>
+      <li><a href="/metamask-confirmation-screen-bridge-fields-to-check/">MetaMask Confirmation Screen: Bridge Fields to Check</a></li>
+      <li><a href="/variational-raises-110-million-at-1-5-billion-valuation/">Variational raises $110 million at $1.5 billion valuation</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
