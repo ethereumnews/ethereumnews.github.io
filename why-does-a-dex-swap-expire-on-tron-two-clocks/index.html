@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Does a DEX Swap Expire? TRON’s Two Clocks | Web3 Hub</title>
+<meta name="description" content="A DEX swap can expire before TRON includes it or revert after its router deadline; learn how to identify the clock and resubmit the trade correctly.">
+<link rel="canonical" href="https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Does a DEX Swap Expire on TRON? Two Clocks">
+<meta property="og:description" content="A DEX swap can expire before TRON includes it or revert after its router deadline; learn how to identify the clock and resubmit the trade correctly.">
+<meta property="og:url" content="https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/why-does-a-dex-swap-expire-on-tron-two-clocks-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Does a DEX Swap Expire on TRON? Two Clocks"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Does a DEX Swap Expire on TRON? Two Clocks">
+<meta name="twitter:description" content="A DEX swap can expire before TRON includes it or revert after its router deadline; learn how to identify the clock and resubmit the trade correctly.">
+<meta property="article:published_time" content="2026-11-21T14:23:31+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/#article",
+      "headline": "Why Does a DEX Swap Expire on TRON? Two Clocks",
+      "isAccessibleForFree": true,
+      "description": "A DEX swap can expire before TRON includes it or revert after its router deadline; learn how to identify the clock and resubmit the trade correctly.",
+      "datePublished": "2026-11-21T14:23:31+00:00",
+      "dateModified": "2026-11-21T14:23:31+00:00",
+      "url": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 466,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-does-a-dex-swap-expire-on-tron-two-clocks-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-does-a-dex-swap-expire-on-tron-two-clocks-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/why-does-a-dex-swap-expire-on-tron-two-clocks-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Does a DEX Swap Expire on TRON? Two Clocks",
+          "item": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/#webpage",
+      "url": "https://ethereumnews.github.io/why-does-a-dex-swap-expire-on-tron-two-clocks/",
+      "name": "Why Does a DEX Swap Expire? TRON’s Two Clocks | Web3 Hub",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">Why Does a DEX Swap Expire on TRON? Two Clocks</h1>
+<p class="sb43b948">A DEX swap can expire before TRON includes it or revert after its router deadline; learn how to identify the clock and resubmit the trade correctly.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-21T14:23:31+00:00">Nov 21, 2026 · 14:23 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/why-does-a-dex-swap-expire-on-tron-two-clocks.jpg" alt="Why Does a DEX Swap Expire on TRON? Two Clocks">
+  </figure>
+  <div class="s55ebc20"><p>A DEX swap fails with “transaction expired” when TRON rejects it after the network expiration or the router sees its deadline pass. Both limits stop a stale trade from executing at an old price, but they fail at different stages and have different costs.</p>
+<h2>Start with transaction expiry</h2>
+<p>If the transaction never lands in a block, start with its network expiration. java-tron sets a default expiration 60 seconds after the reference block; signing slowly or broadcasting late can use up that window before inclusion.</p>
+<p>A transaction rejected after expiration does not execute and costs nothing. Submit a fresh swap so the wallet builds a current transaction, then sign and broadcast promptly. Do not rely on resending the expired transaction.</p>
+<p>TaPoS can cause a similar pre-inclusion rejection. TRON transactions carry ref_block_bytes and ref_block_hash, which tie them to a recent block; a lagging node or a fork may leave the receiving node unable to recognize that reference. Try again through a current node or wallet connection.</p>
+<h2>Then check the router deadline</h2>
+<p>An included transaction that reverts points to the router’s deadline. The contract checks that timestamp when the swap executes, so a delayed transaction or a device clock running behind can make the deadline already past by execution time.</p>
+<p>This failure did reach the chain: the reverted swap still burns Energy. On TRONSCAN, inspect the transaction result or receipt. A failed, included transaction indicates an on-chain revert; a transaction rejected before inclusion has no executed swap. For the wallet sequence on SunSwap, see <a href="https://coindeskly.hashnode.dev/how-to-swap-trx-on-sunswap-with-tronlink" rel="noopener">how to make a TRX swap with SunSwap</a>.</p>
+<p>Set the device clock automatically, then submit a new swap with a reasonable deadline if the wallet exposes that setting. Contact the wallet or exchange support team if fresh transactions keep failing, or if TRONSCAN’s result does not match the error shown in the wallet. Include the transaction ID and the approximate submission time.</p>
+<h2>Questions readers ask next</h2>
+<h3>Why do some aggregators set very short swap deadlines?</h3>
+<p>Short deadlines limit how long a quoted trade can wait before execution. That reduces the chance of a stale price, though a slow broadcast can make the swap revert.</p>
+<h3>Can the same signed swap be rebroadcast after it expires?</h3>
+<p>No. Once its network expiration passes, create and sign a new transaction. A router deadline that has passed also requires a new swap submission.</p>
+<h3>How does TRON’s 3-second block time affect expiry margins?</h3>
+<p>Blocks arrive about every three seconds, but inclusion is not guaranteed within a set number of blocks. Leave time for signing and broadcast within java-tron’s default 60-second network window.</p>
+<h3>Do Ethereum DEXs enforce expiry the same way?</h3>
+<p>Ethereum transactions also have network inclusion rules, while DEX routers may check a separate deadline. The two checks are distinct there too, though their transaction fields and timing rules differ.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-to-recover-tokens-sent-to-the-wrong-network/">How to recover tokens sent to the wrong network</a></li>
+      <li><a href="/replace-an-ethereum-transaction-when-its-nonce-is-pending/">Replace an Ethereum Transaction When Its Nonce Is Pending</a></li>
+      <li><a href="/monad-token-contract-addresses-how-to-verify-them/">Monad token contract addresses: how to verify them</a></li>
+      <li><a href="/how-to-choose-a-reliable-rpc-provider-for-your-workload/">How to choose a reliable RPC provider for your workload</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
