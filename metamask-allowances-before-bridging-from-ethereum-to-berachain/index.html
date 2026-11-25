@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check token allowance in MetaMask for Berachain</title>
+<meta name="description" content="How to check token allowance in MetaMask before bridging to Berachain: match the source-chain token, wallet and bridge spender, then compare the amount.">
+<link rel="canonical" href="https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="MetaMask allowances before bridging from Ethereum to Berachain">
+<meta property="og:description" content="How to check token allowance in MetaMask before bridging to Berachain: match the source-chain token, wallet and bridge spender, then compare the amount.">
+<meta property="og:url" content="https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/metamask-allowances-before-bridging-from-ethereum-to-berachain-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MetaMask allowances before bridging from Ethereum to Berachain"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MetaMask allowances before bridging from Ethereum to Berachain">
+<meta name="twitter:description" content="How to check token allowance in MetaMask before bridging to Berachain: match the source-chain token, wallet and bridge spender, then compare the amount.">
+<meta property="article:published_time" content="2026-11-25T18:04:33+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/#article",
+      "headline": "MetaMask allowances before bridging from Ethereum to Berachain",
+      "isAccessibleForFree": true,
+      "description": "How to check token allowance in MetaMask before bridging to Berachain: match the source-chain token, wallet and bridge spender, then compare the amount.",
+      "datePublished": "2026-11-25T18:04:33+00:00",
+      "dateModified": "2026-11-25T18:04:33+00:00",
+      "url": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 360,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/metamask-allowances-before-bridging-from-ethereum-to-berachain-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/metamask-allowances-before-bridging-from-ethereum-to-berachain-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/metamask-allowances-before-bridging-from-ethereum-to-berachain-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MetaMask allowances before bridging from Ethereum to Berachain",
+          "item": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/#webpage",
+      "url": "https://ethereumnews.github.io/metamask-allowances-before-bridging-from-ethereum-to-berachain/",
+      "name": "How to check token allowance in MetaMask for Berachain",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">MetaMask allowances before bridging from Ethereum to Berachain</h1>
+<p class="sb43b948">How to check token allowance in MetaMask before bridging to Berachain: match the source-chain token, wallet and bridge spender, then compare the amount.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-25T18:04:33+00:00">Nov 25, 2026 · 18:04 UTC</time><span class="s5286a42">2 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/metamask-allowances-before-bridging-from-ethereum-to-berachain.jpg" alt="MetaMask allowances before bridging from Ethereum to Berachain">
+  </figure>
+  <div class="s55ebc20"><p>The Berachain bridge moves assets across chains for use in Berachain’s DeFi ecosystem. Before you send, check the allowance for the exact token and account on the source chain, against the bridge contract and planned amount: an ERC-20 allowance lets that spender transfer that token.</p>
+<p>Connecting MetaMask to the Berachain bridge does not grant token spending permission. Knowing <a href="https://ethereumnews.github.io/berachain-bridge-approvals-set-how-much-a-contract-can-spend/">what a Berachain bridge approval permits</a> helps you tell a token approval apart from connecting your wallet.</p>
+<h2>Which allowance should you check?</h2>
+<p>Check the source-chain token contract’s allowance for your wallet account and the bridge spender. A destination-chain approval is separate; it does not tell you whether the bridge can spend tokens on the source chain.</p>
+<p>Start by selecting the route in the bridge and noting the source network and token. Confirm MetaMask is connected to the account you intend to use. The network, token, account, spender and transfer amount must all match the route.</p>
+<ol>
+<li>Open MetaMask Portfolio’s allowance view if it supports the source network.</li>
+<li>If that network is unsupported, use its block explorer’s approval checker and enter your wallet address.</li>
+<li>Find the token and the bridge contract listed as spender. Compare the available allowance with the amount you plan to transfer.</li>
+</ol>
+<p>ERC-20 approvals are recorded on-chain, separately from a dapp connection. Native gas tokens such as ETH do not use ERC-20 allowances.</p>
+<h2>How do you know whether the allowance covers the transfer?</h2>
+<p>Take a USDC transfer from Ethereum. Look up the connected account’s USDC allowance for the bridge spender on Ethereum, then compare it with the USDC amount in the route. An allowance at least as large as that amount covers the planned spend; a smaller allowance may prompt the bridge to request another approval.</p>
+<p>If MetaMask shows an approval request, review the token, spender and spending cap before signing. The prompt is where you can see the permission the bridge is asking for. Checking an allowance only reads the existing permission; granting one creates a new approval, while revoking one changes an existing permission.</p>
+<p>Once the allowance covers the route, continue with the transfer. If it does not, decide whether to approve the amount shown in MetaMask before proceeding.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/us-seeks-forfeiture-of-1-1-billion-in-binance-hack-usdc/">US seeks forfeiture of $1.1 billion in Binance hack USDC</a></li>
+      <li><a href="/how-to-use-debridge-when-you-need-tokens-on-another-chain/">How to use deBridge when you need tokens on another chain</a></li>
+      <li><a href="/blackrock-hong-kong-tokenized-fund-reaches-100-million/">BlackRock Hong Kong tokenized fund reaches $100 million</a></li>
+      <li><a href="/why-does-depositing-an-erc-20-token-to-polygon-need-two-ethereum-trans/">Why does depositing an ERC-20 token to Polygon need two Ethereum transactions?</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
