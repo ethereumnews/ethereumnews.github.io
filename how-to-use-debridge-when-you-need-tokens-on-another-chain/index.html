@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Does deBridge Work? Cross-Chain Tokens Explained</title>
+<meta name="description" content="How does deBridge work? DLN locks your source tokens, a solver pays you on the destination chain, then claims the locked tokens through deBridge messaging.">
+<link rel="canonical" href="https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to use deBridge when you need tokens on another chain">
+<meta property="og:description" content="How does deBridge work? DLN locks your source tokens, a solver pays you on the destination chain, then claims the locked tokens through deBridge messaging.">
+<meta property="og:url" content="https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/how-to-use-debridge-when-you-need-tokens-on-another-chain-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to use deBridge when you need tokens on another chain"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to use deBridge when you need tokens on another chain">
+<meta name="twitter:description" content="How does deBridge work? DLN locks your source tokens, a solver pays you on the destination chain, then claims the locked tokens through deBridge messaging.">
+<meta property="article:published_time" content="2026-11-25T13:13:08+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/#article",
+      "headline": "How to use deBridge when you need tokens on another chain",
+      "isAccessibleForFree": true,
+      "description": "How does deBridge work? DLN locks your source tokens, a solver pays you on the destination chain, then claims the locked tokens through deBridge messaging.",
+      "datePublished": "2026-11-25T13:13:08+00:00",
+      "dateModified": "2026-11-25T13:13:08+00:00",
+      "url": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 469,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-use-debridge-when-you-need-tokens-on-another-chain-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-use-debridge-when-you-need-tokens-on-another-chain-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/how-to-use-debridge-when-you-need-tokens-on-another-chain-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to use deBridge when you need tokens on another chain",
+          "item": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/#webpage",
+      "url": "https://ethereumnews.github.io/how-to-use-debridge-when-you-need-tokens-on-another-chain/",
+      "name": "How Does deBridge Work? Cross-Chain Tokens Explained",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">How to use deBridge when you need tokens on another chain</h1>
+<p class="sb43b948">How does deBridge work? DLN locks your source tokens, a solver pays you on the destination chain, then claims the locked tokens through deBridge messaging.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-25T13:13:08+00:00">Nov 25, 2026 · 13:13 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/how-to-use-debridge-when-you-need-tokens-on-another-chain.jpg" alt="How to use deBridge when you need tokens on another chain">
+  </figure>
+  <div class="s55ebc20"><p>deBridge moves tokens across chains by locking your source funds in an order, then having a solver pay the destination amount from its own inventory under the order’s terms.</p>
+<p>That design is the deBridge Liquidity Network (DLN): the protocol coordinates an order, while competing solvers supply the destination liquidity. You receive tokens native to the destination chain; the route does not rely on a pooled reserve or a wrapped copy of your token.</p>
+<h2>What happens after you create an order?</h2>
+<p>You choose the source token and amount, destination token, minimum amount you will accept, and destination address. You sign one source-chain transaction to create the order and lock the source tokens. You also need the source chain’s native token for gas.</p>
+<p>A solver, also called a taker, decides whether the order’s terms make sense and pays the destination tokens to your address from its own funds. deBridge says many market orders complete within seconds, but an order can stay open if no solver accepts it—for example, if the price or risk is unattractive.</p>
+<p>After paying you, the solver submits proof of fulfilment through deBridge’s validator-signed cross-chain messaging. That message lets the solver claim the tokens locked on the source chain. The destination payment comes first; the source funds are released after the fulfilment is verified.</p>
+<p>For instance, a Monad bridge is an app for transferring supported assets between Monad and Ethereum. When choosing a route, compare the quoted minimum output and fees for that transfer; the <a href="https://qiita.com/kailanireyna/items/3fc154995f8944472002" rel="noopener">monad bridge fees</a> are one part of that check.</p>
+<h2>Fees, pending orders, and other bridge designs</h2>
+<p>DLN fees include a fixed fee in the source chain’s native token and a percentage-based fee; the source transaction also costs network gas. The exact quote can vary with the route, solver liquidity, and market conditions, so check the amount you will receive before signing.</p>
+<p>An unfilled order is not stuck indefinitely. You can start cancellation on the destination chain using the order authority, choose where the refund should go on the source chain, and confirm the cancellation transaction. The cancellation message then unlocks the source tokens back to you. Cancellation costs destination-chain gas, and the destination payment has not happened unless the order was fulfilled.</p>
+<p>Some routes use a lock-and-mint model: tokens are held on one chain and a representation is minted on another. DLN instead has the solver front the destination payout and claim the locked source funds after verification. Designs differ: Wormhole NTT supports native token transfers, while Across uses relayers and liquidity. Compare the route’s actual output, fees, supported assets, and execution conditions rather than assuming every bridge follows the same model.</p>
+<ul>
+<li>Choose the source and destination chains, tokens, and address.</li>
+<li>Review the minimum output and fee quote.</li>
+<li>Track the order; if it remains unfilled, use destination-chain cancellation to request the source refund.</li>
+</ul></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/blackrock-hong-kong-tokenized-fund-reaches-100-million/">BlackRock Hong Kong tokenized fund reaches $100 million</a></li>
+      <li><a href="/why-does-depositing-an-erc-20-token-to-polygon-need-two-ethereum-trans/">Why does depositing an ERC-20 token to Polygon need two Ethereum transactions?</a></li>
+      <li><a href="/wallet-and-dex-compatibility-when-networks-differ/">Wallet and DEX Compatibility When Networks Differ</a></li>
+      <li><a href="/etherscan-transaction-details-what-happened-and-what-it-cost/">Etherscan transaction details: What happened and what it cost</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
