@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is a Virtual Order in a TWAMM? 100 ETH Example</title>
+<meta name="description" content="A virtual order in a TWAMM splits a long-term trade into tiny trades over time, then settles their combined effect on-chain at the pool’s next interaction.">
+<link rel="canonical" href="https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f1ebdf">
+<meta name="author" content="Web3 Hub Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Web3 Hub">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What is a virtual order in a TWAMM? A 100 ETH case">
+<meta property="og:description" content="A virtual order in a TWAMM splits a long-term trade into tiny trades over time, then settles their combined effect on-chain at the pool’s next interaction.">
+<meta property="og:url" content="https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/">
+<meta property="og:image" content="https://ethereumnews.github.io/assets/covers/what-is-a-virtual-order-in-a-twamm-a-100-eth-case-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What is a virtual order in a TWAMM? A 100 ETH case"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What is a virtual order in a TWAMM? A 100 ETH case">
+<meta name="twitter:description" content="A virtual order in a TWAMM splits a long-term trade into tiny trades over time, then settles their combined effect on-chain at the pool’s next interaction.">
+<meta property="article:published_time" content="2026-11-26T01:41:46+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s08adc26e96.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Web3 Hub" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/#article",
+      "headline": "What is a virtual order in a TWAMM? A 100 ETH case",
+      "isAccessibleForFree": true,
+      "description": "A virtual order in a TWAMM splits a long-term trade into tiny trades over time, then settles their combined effect on-chain at the pool’s next interaction.",
+      "datePublished": "2026-11-26T01:41:46+00:00",
+      "dateModified": "2026-11-26T01:41:46+00:00",
+      "url": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/",
+      "mainEntityOfPage": {
+        "@id": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "wordCount": 431,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/what-is-a-virtual-order-in-a-twamm-a-100-eth-case-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/what-is-a-virtual-order-in-a-twamm-a-100-eth-case-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://ethereumnews.github.io/assets/covers/what-is-a-virtual-order-in-a-twamm-a-100-eth-case-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ethereumnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What is a virtual order in a TWAMM? A 100 ETH case",
+          "item": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ethereumnews.github.io/#org",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ethereumnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://ethereumnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethereumnews.github.io/#website",
+      "name": "Web3 Hub",
+      "url": "https://ethereumnews.github.io/",
+      "publisher": {
+        "@id": "https://ethereumnews.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Web3 Hub reports crypto news: Bitcoin and Ethereum, exchanges, DeFi protocols, stablecoins, regulation, security incidents and network upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/#webpage",
+      "url": "https://ethereumnews.github.io/what-is-a-virtual-order-in-a-twamm-a-100-eth-case/",
+      "name": "What Is a Virtual Order in a TWAMM? 100 ETH Example",
+      "isPartOf": {
+        "@id": "https://ethereumnews.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="se7c10fa" href="#main">Skip to the article</a>
+<header class="sb325bfd">
+  <div class="sbfb202c">
+    <div class="s08eb3de">
+      <a class="s125218c" href="/">Web3 Hub</a>
+      <p class="s8e2e6f6">Markets, protocols and policy, reported</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbfb202c sd223459">
+  <header class="sf7cd888">
+    <h1 class="saf38437">What is a virtual order in a TWAMM? A 100 ETH case</h1>
+<p class="sb43b948">A virtual order in a TWAMM splits a long-term trade into tiny trades over time, then settles their combined effect on-chain at the pool’s next interaction.</p>    <p class="s224f724 sa210ee0"><span class="s267f735">By Web3 Hub Newsroom</span><time datetime="2026-11-26T01:41:46+00:00">Nov 26, 2026 · 01:41 UTC</time><span class="s5286a42">3 min read</span></p>
+  </header>
+  <figure class="s6fb9bc2">
+    <img width="1200" height="630" fetchpriority="high" class="s93efac2" src="/assets/covers/what-is-a-virtual-order-in-a-twamm-a-100-eth-case.jpg" alt="What is a virtual order in a TWAMM? A 100 ETH case">
+  </figure>
+  <div class="s55ebc20"><p>A virtual order in a TWAMM is a long-term trade split into tiny trades over time; this explains why the pool applies them only at its next interaction. Take a trader selling 100 ETH over 10 hours: the order streams out at roughly 10 ETH per hour.</p>
+<p>A TWAMM is a time-weighted market maker built into an automated market maker. In <a href="https://www.tumblr.com/smoothlyvirtualfortune/834119516274507776/questions-to-ask-before-depositing" rel="noopener">Fraxswap</a>, that lets a trader spread a large sale over time without sending a separate swap for every small part.</p>
+<h2>What happens to 100 ETH over 10 hours?</h2>
+<p>At a constant rate, the order represents roughly 10 ETH of virtual trades after the first hour. No transaction executes each tiny slice as that hour passes; the pair records the order’s rate and elapsed time.</p>
+<p>When someone next swaps or changes liquidity, the Fraxswap pair contracts settle the elapsed trades first. The function <em>executeVirtualOrders</em> computes their combined effect, so reserves then reflect about 10 ETH sold. The pool follows a constant product curve, and arbitrageurs can trade against price differences between pool interactions.</p>
+<p>This is lazy settlement: the first transaction that touches the pair after time has passed triggers the computation, and its caller pays the gas. Calculating every slice in a separate on-chain transaction would mean recurring gas costs; calculating the cumulative result at interaction makes long-term orders practical.</p>
+<h2>Why do opposing virtual orders reduce price impact?</h2>
+<p>When virtual orders to buy and sell the same token run during the same interval, they trade against each other first. Only the net imbalance pushes the pool along its constant product curve, so both sides cause less price impact than if their full amounts moved the reserves separately.</p>
+<p>For instance, a buy stream can absorb part of a sell stream within that interval. The pool then processes only what remains unmatched, reducing how far its price moves for both traders. Paradigm proposed the TWAMM design in July 2021; Dave White, Dan Robinson and Hayden Adams are named on the proposal.</p>
+<h2>More about long-term orders</h2>
+<h3>How long can a long-term order run?</h3>
+<p>There is no single run time set by the TWAMM concept. The pair groups order expiries into fixed time intervals; an order ends at its selected expiry.</p>
+<h3>Does a virtual order earn LP fees for the pool?</h3>
+<p>Virtual trades execute against the pool like swaps, and the applicable swap fee accrues to liquidity providers under the pair’s fee settings.</p>
+<h3>What happens if pool liquidity is removed?</h3>
+<p>The pair settles pending virtual orders before processing a liquidity change. So elapsed trades are computed against the reserves before the removal takes effect.</p></div>
+  <aside class="s4bac11b">
+    <h2 class="s3925b2a">Related</h2>
+    <ul class="s97920cd">
+      <li><a href="/how-to-split-eth-across-staking-liquid-staking-and-restaking/">How to split ETH across staking, liquid staking and restaking</a></li>
+      <li><a href="/metamask-allowances-before-bridging-from-ethereum-to-berachain/">MetaMask allowances before bridging from Ethereum to Berachain</a></li>
+      <li><a href="/us-seeks-forfeiture-of-1-1-billion-in-binance-hack-usdc/">US seeks forfeiture of $1.1 billion in Binance hack USDC</a></li>
+      <li><a href="/how-to-use-debridge-when-you-need-tokens-on-another-chain/">How to use deBridge when you need tokens on another chain</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s276c52c">
+  <div class="sbfb202c">
+    <div class="s578d5e8">
+      <p class="sf1e1d6c">Web3 Hub</p>
+      <nav class="s0c0a4b4" aria-label="Site">
+        <ul>
+<li><a href="/">Front page</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/archive/">Archive</a></li><li><a href="/about/">Masthead</a></li><li><a href="/how-we-report/">How we report</a></li>        </ul>
+      </nav>
+      <p class="se8f420b">Published for information only; not financial advice.</p>
+      <p class="s69eb6f2">© 2026 Web3 Hub</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
